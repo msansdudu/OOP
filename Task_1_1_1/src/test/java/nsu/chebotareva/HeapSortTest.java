@@ -38,4 +38,11 @@ class HeapSortTest {
         ob.sort(testArray, 5);
         Assertions.assertArrayEquals(a, testArray);
     }
+
+    @Test
+    void test_main() {
+        System.out.println("Testing main");
+        String[] inputMain = {""};
+        HeapSort.main(inputMain);
+    }
 }
