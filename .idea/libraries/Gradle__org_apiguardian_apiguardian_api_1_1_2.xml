@@ -4,7 +4,12 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/jacoco-0/doc/api" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/jacoco-0/doc/examples/build/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/jacoco-0/doc/examples/build/src/test/java" />
+    </SOURCES>
   </library>
 </component>

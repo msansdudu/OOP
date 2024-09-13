@@ -1,7 +1,7 @@
 package nsu.chebotareva;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 class HeapSortTest {
 
@@ -37,12 +37,5 @@ class HeapSortTest {
         HeapSort ob = new HeapSort();
         ob.sort(testArray, 5);
         Assertions.assertArrayEquals(a, testArray);
-    }
-
-    @Test
-    void test_main() {
-        System.out.println("Testing main");
-        String[] inputMain = {""};
-        HeapSort.main(inputMain);
     }
 }

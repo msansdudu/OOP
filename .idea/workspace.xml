@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="first fixing style">
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="better coverage">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_1/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_1/src/main/java/nsu/chebotareva/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/src/main/java/nsu/chebotareva/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_1/src/test/java/nsu/chebotareva/HeapSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_1/src/test/java/nsu/chebotareva/HeapSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,12 +87,17 @@
     "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__1__1__1",
+    "git-widget-placeholder": "#1 on Task__1__1__1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
-    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_1/src/main/java/nsu_chebotareva/Main.java"
+    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_1/src/main/java/nsu_chebotareva/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -103,20 +111,7 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HeapSortTest (1)">
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu_chebotareva.HeapSort" />
-      <module name="Task_1_1_1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nsu_chebotareva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Shell Script.run.sh">
     <configuration name="nsu.chebotareva.HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.HeapSort" />
       <module name="Task_1_1_1.main" />
@@ -202,13 +197,28 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="run.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/Task_1_1_1/run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/Task_1_1_1" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.run.sh" />
         <item itemvalue="Gradle.HeapSortTest (1)" />
         <item itemvalue="Gradle.HeapSortTest.test_heapify" />
         <item itemvalue="Application.nsu.chebotareva.HeapSort" />
         <item itemvalue="Gradle.HeapSortTest" />
-        <item itemvalue="Application.HeapSort" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726143293056</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="better coverage">
+      <option name="closed" value="true" />
+      <created>1726148202652</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726148202652</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,13 +281,14 @@
     <MESSAGE value="add workflow" />
     <MESSAGE value="first commit task1" />
     <MESSAGE value="first fixing style" />
-    <option name="LAST_COMMIT_MESSAGE" value="first fixing style" />
+    <MESSAGE value="better coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="better coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSort.ic" NAME="HeapSort Coverage Results" MODIFIED="1726139358064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu_chebotareva.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726146437535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726204195609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

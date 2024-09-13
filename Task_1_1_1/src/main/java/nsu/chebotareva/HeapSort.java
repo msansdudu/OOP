@@ -61,15 +61,5 @@ public class HeapSort {
      * @param args -
      */
     public static void main(String[] args) {
-        int[] arr = {2, 5, 4, 1, 3};
-        int n = arr.length;
-
-        HeapSort heap = new HeapSort();
-        heap.sort(arr, n);
-
-        for (int j : arr) {
-            System.out.print(j + " ");
-        }
-        System.out.println();
     }
 }
