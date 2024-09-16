@@ -2,6 +2,7 @@ package nsu.chebotareva;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+import java.util.Random;
 
 class HeapSortTest {
 
@@ -37,5 +38,27 @@ class HeapSortTest {
         HeapSort ob = new HeapSort();
         ob.sort(testArray, 5);
         Assertions.assertArrayEquals(a, testArray);
+    }
+
+    void random_array(int size){
+        int[] randomArray = new int[size];
+        Random random = new Random();
+        for (int i = 0; i < size; i++) {
+            randomArray[i] = random.nextInt(1001); // Генерация случайного числа от 0 до 1000
+        }
+        HeapSort ob = new HeapSort();
+
+        long start = System.nanoTime();
+        ob.sort(randomArray, size);
+        long end = System.nanoTime();
+        long duration = end - start;
+        System.out.println(duration / 15);
+    }
+
+    @Test
+    void difAlg() {
+        for (int size = 5; size < 10000; size+=100) {
+            random_array(size);
+        }
     }
 }
