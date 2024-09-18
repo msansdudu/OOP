@@ -10,8 +10,8 @@ public class FormingCards {
      * Создаем три массива.
      * deck (значение карты), suits (масти карт), cost (соответствующие стоимости к deck).
      */
-    static String[] deck = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка",
-            "Семерка", "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
+    static String[] deck = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка", "Семерка",
+            "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
     static String[] suits = {"Пики", "Червы", "Бубны", "Трефы"};
     static int[] cost = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
@@ -29,13 +29,13 @@ public class FormingCards {
             // если цифра или туз, то имя вида "семерка червы"
         } else {
             if (Objects.equals(deck[numCard], "Дама")) {
-                if (numSuit == 0){
+                if (numSuit == 0) {
                     name = suits[numSuit].substring(0, 3) + "овая Дама";
                 } else {
                     name = suits[numSuit].substring(0, 4) + "овая Дама";
                 }
             } else {
-                if (numSuit == 0){
+                if (numSuit == 0) {
                     name = suits[numSuit].substring(0, 3) + "овый " + deck[numCard];
                 } else {
                     name = suits[numSuit].substring(0, 4) + "овый " + deck[numCard];

@@ -89,7 +89,7 @@ public class Main {
             win = round(round, sc);
             if (win == 1) {
                 plScore++;
-                System.out.printf("%nВы выиграли раунд! Счет %d:%d%s%n",plScore, dlScore,
+                System.out.printf("%nВы выиграли раунд! Счет %d:%d%s%n", plScore, dlScore,
                         plScore > dlScore ? " в вашу пользу." : (plScore == dlScore)
                                 ? ". Счет сравнялся!" : " в пользу дилера.");
             } else if (win == 0) {

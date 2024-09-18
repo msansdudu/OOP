@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="fixing style">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/FormingCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/FormingCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +85,7 @@
     "Application.HeapSort.executor": "Coverage",
     "Gradle.Build Task_1_1_1.executor": "Run",
     "Gradle.CardsTest.testingNames.executor": "Run",
+    "Gradle.FormingCardsTest.executor": "Coverage",
     "Gradle.FormingCardsTest.testingDealingCards.executor": "Run",
     "Gradle.HeapSortTest (1).executor": "Coverage",
     "Gradle.HeapSortTest.executor": "Coverage",
@@ -119,20 +121,7 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
-      <module name="Task_1_1_2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nsu.chebotareva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.FormingCardsTest">
     <configuration name="CardsTest.testingNames" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,6 +136,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;nsu.chebotareva.CardsTest.testingNames&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FormingCardsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.chebotareva.FormingCardsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FormingCardsTest" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
         <item itemvalue="Gradle.FormingCardsTest.testingDealingCards" />
         <item itemvalue="Gradle.CardsTest.testingNames" />
         <item itemvalue="Gradle.HeapSortTest (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +333,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726634845450</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixing style">
+      <option name="closed" value="true" />
+      <created>1726635151633</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726635151633</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixing style">
+      <option name="closed" value="true" />
+      <created>1726635330719</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726635330719</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,6 +380,7 @@
       <FILTER>nsu_chebotareva.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1726632496259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$FormingCardsTest.ic" NAME="FormingCardsTest Coverage Results" MODIFIED="1726662301666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726462624244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
