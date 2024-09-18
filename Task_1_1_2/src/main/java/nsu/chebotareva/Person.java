@@ -26,7 +26,8 @@ public class Person {
             }
             System.out.printf("%s (%d)] => %d%n", cards[amountOfCards - 1],
                     costs[amountOfCards - 1], sumOfCosts);
-        } else {
+        }
+        else {
             if (isOpenDealer) {
                 System.out.print("\tКарты дилера: [");
                 for (int i = 0; i < amountOfCards - 1; i++) {
@@ -34,8 +35,10 @@ public class Person {
                 }
                 System.out.printf("%s (%d)] => %d%n", cards[amountOfCards - 1],
                         costs[amountOfCards - 1], sumOfCosts);
-            } else {
-                System.out.printf("\tКарты дилера: [%s (%d), <закрытая карта>]%n", cards[0], costs[0]);
+            }
+            else {
+                System.out.printf("\tКарты дилера: [%s (%d), <закрытая карта>]%n",
+                        cards[0], costs[0]);
             }
         }
     }
@@ -58,7 +61,7 @@ public class Person {
      *
      * @param player -- ссылка на игрока.
      */
-    public void newCardForDealer(Person player){
+    public void newCardForDealer(Person player) {
         FormingCards.dealingCards(this, 1);
         try {
             Thread.sleep(500);

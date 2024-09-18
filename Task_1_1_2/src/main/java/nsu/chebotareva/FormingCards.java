@@ -25,17 +25,21 @@ public class FormingCards {
         String name;
         if (numCard < 9 || numCard == 12) {
             name = deck[numCard] + " " + suits[numSuit];  // если цифра или туз, то имя вида "семерка червы"
-        } else {
+        }
+        else {
             if (Objects.equals(deck[numCard], "Дама")) {
                 if (numSuit == 0){
                     name = suits[numSuit].substring(0, 3) + "овая Дама";
-                } else {
+                }
+                else {
                     name = suits[numSuit].substring(0, 4) + "овая Дама";
                 }
-            } else {
+            }
+            else {
                 if (numSuit == 0){
                     name = suits[numSuit].substring(0, 3) + "овый " + deck[numCard];
-                } else {
+                }
+                else {
                     name = suits[numSuit].substring(0, 4) + "овый " + deck[numCard];
                 }
             }
