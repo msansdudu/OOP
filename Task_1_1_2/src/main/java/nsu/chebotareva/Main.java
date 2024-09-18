@@ -14,8 +14,8 @@ public class Main {
         Person player = new Person();
         Person dealer = new Person();
 
-        FormingCards.dealingCards (player, 2);
-        FormingCards.dealingCards (dealer, 2);
+        FormingCards.dealingCards(player, 2);
+        FormingCards.dealingCards(dealer, 2);
         System.out.printf("Раунд %d%nДилер раздал карты%n", numberOfRound);
         player.printingCards(Boolean.FALSE, Boolean.FALSE);
         dealer.printingCards(Boolean.TRUE, Boolean.FALSE);
