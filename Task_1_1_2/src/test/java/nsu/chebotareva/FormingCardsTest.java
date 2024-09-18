@@ -1,12 +1,11 @@
 package nsu.chebotareva;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class FormingCardsTest {
     @Test
-    void testingNames () {
+    void testingNames() {
         System.out.println("Testing names of cards...");
         String name, mustBe;
         name = FormingCards.nameOfCard(2, 3);
@@ -27,7 +26,7 @@ class FormingCardsTest {
     }
 
     @Test
-    void testingDealingCards () {
+    void testingDealingCards() {
         System.out.println("Testing replacing ace costs...");
         Person player = new Person();
         player.cards[0] = "Девятка Пики";
