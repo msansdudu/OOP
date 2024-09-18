@@ -7,7 +7,8 @@ import java.util.Objects;
  */
 public class FormingCards {
     /**
-     * Создаем три массива: deck (значение карты), suits (масти карт), cost (соответствующие стоимости к deck).
+     * Создаем три массива.
+     * deck (значение карты), suits (масти карт), cost (соответствующие стоимости к deck).
      */
     static String[] deck = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка",
             "Семерка", "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
@@ -24,22 +25,19 @@ public class FormingCards {
     public static String nameOfCard(int numCard, int numSuit) {
         String name;
         if (numCard < 9 || numCard == 12) {
-            name = deck[numCard] + " " + suits[numSuit];  // если цифра или туз, то имя вида "семерка червы"
-        }
-        else {
+            name = deck[numCard] + " " + suits[numSuit];
+            // если цифра или туз, то имя вида "семерка червы"
+        } else {
             if (Objects.equals(deck[numCard], "Дама")) {
                 if (numSuit == 0){
                     name = suits[numSuit].substring(0, 3) + "овая Дама";
-                }
-                else {
+                } else {
                     name = suits[numSuit].substring(0, 4) + "овая Дама";
                 }
-            }
-            else {
+            } else {
                 if (numSuit == 0){
                     name = suits[numSuit].substring(0, 3) + "овый " + deck[numCard];
-                }
-                else {
+                } else {
                     name = suits[numSuit].substring(0, 4) + "овый " + deck[numCard];
                 }
             }

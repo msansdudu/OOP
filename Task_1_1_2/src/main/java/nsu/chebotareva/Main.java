@@ -73,13 +73,11 @@ public class Main {
             plScore++;
             System.out.printf("%nВы выиграли раунд! Счет %d:%d в вашу пользу.%n",
                     plScore, dlScore);
-        }
-        else if (win == 0) {
+        } else if (win == 0) {
             dlScore++;
             System.out.printf("%nВы проиграли раунд! Счет %d:%d в пользу дилера.%n",
                     plScore, dlScore);
-        }
-        else {
+        } else {
             plScore++;
             dlScore++;
             System.out.printf("Ничья! Счет %d:%d. Счет сравнялся!%n", plScore, dlScore);
@@ -94,14 +92,12 @@ public class Main {
                 System.out.printf("%nВы выиграли раунд! Счет %d:%d%s%n",plScore, dlScore,
                         plScore > dlScore ? " в вашу пользу." : (plScore == dlScore)
                                 ? ". Счет сравнялся!" : " в пользу дилера.");
-            }
-            else if (win == 0) {
+            } else if (win == 0) {
                 dlScore++;
                 System.out.printf("%nВы проиграли раунд! Счет %d:%d%s%n", plScore, dlScore,
                         plScore > dlScore ? " в вашу пользу." : (plScore == dlScore)
                                 ? ". Счет сравнялся!" : " в пользу дилера.");
-            }
-            else {
+            } else {
                 plScore++;
                 dlScore++;
                 System.out.printf("Ничья! Счет %d:%d%s%n", plScore, dlScore,

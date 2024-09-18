@@ -5,7 +5,8 @@ package nsu.chebotareva;
  */
 public class Person {
     /**
-     * Для конкретного Person имеем его набор карт, их соответствующие стоимости, их количество и сумму очков.
+     * Для конкретного Person имеем его набор карт, их соответствующие стоимости.
+     * А также их количество и сумму очков.
      */
     String[] cards = new String[21];
     int[] costs = new int[21];
@@ -26,8 +27,7 @@ public class Person {
             }
             System.out.printf("%s (%d)] => %d%n", cards[amountOfCards - 1],
                     costs[amountOfCards - 1], sumOfCosts);
-        }
-        else {
+        } else {
             if (isOpenDealer) {
                 System.out.print("\tКарты дилера: [");
                 for (int i = 0; i < amountOfCards - 1; i++) {
@@ -35,8 +35,7 @@ public class Person {
                 }
                 System.out.printf("%s (%d)] => %d%n", cards[amountOfCards - 1],
                         costs[amountOfCards - 1], sumOfCosts);
-            }
-            else {
+            } else {
                 System.out.printf("\tКарты дилера: [%s (%d), <закрытая карта>]%n",
                         cards[0], costs[0]);
             }
