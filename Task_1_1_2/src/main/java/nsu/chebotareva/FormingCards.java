@@ -2,12 +2,24 @@ package nsu.chebotareva;
 
 import java.util.Objects;
 
-public class Cards {
+/**
+ * Класс формируем имена карт и их раздачу.
+ */
+public class FormingCards {
+    /**
+     * Создаем три массива: deck (значение карты), suits (масти карт), cost (соответствующие стоимости к deck).
+     */
     static String[] deck = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка", "Семерка", "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
     static String[] suits = {"Пики", "Червы", "Бубны", "Трефы"};
     static int[] cost = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
-    private static String nameOfCard (int numCard, int numSuit) {
+    /**
+     * Метод, генерирующий правильное имя карты (порядок масть-значение и род).
+     * @param numCard -- номер карты в массиве deck.
+     * @param numSuit -- номер масти в массиве suits.
+     * @return -- возвращает имя карты.
+     */
+    public static String nameOfCard (int numCard, int numSuit) {
         String name;
         if (numCard < 9 || numCard == 12) {
             name = deck[numCard] + " " + suits[numSuit];  // если цифра или туз, то имя вида "семерка червы"
@@ -30,6 +42,11 @@ public class Cards {
         return name;
     }
 
+    /**
+     * Раздача карт рандомным образом.
+     * @param person -- кому выдаем карты (игроку или дилеру)?
+     * @param times -- сколько карт выдаем?
+     */
     public static void dealingCards (Person person, int times) {
         for (int i = 0; i < times; i++) {
             int numCard = (int) (Math.random() * 13);
