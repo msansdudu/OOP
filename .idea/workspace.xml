@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="fixing style">
-      <change afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/FormingCards.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/FormingCardsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/MainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/PersonTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="making OOP-style" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726662434364</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="making OOP-style">
+      <option name="closed" value="true" />
+      <created>1727081728389</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727081728389</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +372,8 @@
     <MESSAGE value="making rounds, score and dealers playing" />
     <MESSAGE value="trying making tests" />
     <MESSAGE value="fixing style" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing style" />
+    <MESSAGE value="making OOP-style" />
+    <option name="LAST_COMMIT_MESSAGE" value="making OOP-style" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

@@ -29,7 +29,7 @@ public class Person {
                         cards.get(amountOfCards - 1).cost, sumOfCosts);
             } else {
                 System.out.printf("\tКарты дилера: [%s (%d), <закрытая карта>]%n",
-                        cards.getFirst().name, cards.getFirst().cost);
+                        cards.get(0).name, cards.get(0).cost);
             }
         }
     }
@@ -54,8 +54,8 @@ public class Person {
             if (Deck.deck.isEmpty()) {
                 return 0;
             }
-            cards.add(Deck.deck.getFirst()); // выдали карты
-            Deck.deck.removeFirst();
+            cards.add(Deck.deck.get(0)); // выдали карты
+            Deck.deck.remove(0);
             sumOfCosts += cards.get(amountOfCards).cost; // обновляем суммарную стоимость
             amountOfCards++;
             if (sumOfCosts > 21) { // если новая карта превысила стоимость
@@ -75,7 +75,7 @@ public class Person {
 
     public void cleaningCards(){
         for (int i = 0; i < amountOfCards; i++){
-            cards.removeFirst();
+            cards.remove(0);
         }
         amountOfCards = 0;
         sumOfCosts = 0;
