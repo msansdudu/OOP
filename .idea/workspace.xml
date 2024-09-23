@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="fixing build">
-      <change afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/DeckTest.java" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="adding tests">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Cards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/DeckTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/Task_1_1_1">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Task_1_1_2">
           <activation />
         </task>
         <projects_view>
@@ -78,35 +86,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HeapSort.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.Build Task_1_1_1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CardsTest.testingNames.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FormingCardsTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.FormingCardsTest.testingDealingCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.HeapSortTest (1).executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.HeapSortTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.HeapSortTest.test_heapify.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'nsu.chebotareva'.executor&quot;: &quot;Coverage&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Shell Script.run.sh.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#2 on Task__1__1__2&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/msansdu/Documents/OOP&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/msansdu/Documents/OOP/Task_1_1_2/src/main/java/nsu_chebotareva/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HeapSort.executor": "Coverage",
+    "Gradle.Build Task_1_1_1.executor": "Run",
+    "Gradle.CardsTest.testingNames.executor": "Run",
+    "Gradle.DeckTest.executor": "Run",
+    "Gradle.DeckTest.generatingDeck.executor": "Run",
+    "Gradle.DeckTest.generatingDeckandNames.executor": "Run",
+    "Gradle.FormingCardsTest.executor": "Coverage",
+    "Gradle.FormingCardsTest.testingDealingCards.executor": "Run",
+    "Gradle.HeapSortTest (1).executor": "Coverage",
+    "Gradle.HeapSortTest.executor": "Coverage",
+    "Gradle.HeapSortTest.test_heapify.executor": "Run",
+    "Gradle.PersonTest.cleaningCards.executor": "Run",
+    "Gradle.PersonTest.dealingCards.executor": "Run",
+    "Gradle.PersonTest.executor": "Run",
+    "Gradle.PersonTest.printingCards.executor": "Run",
+    "Gradle.PersonTest.printingDealerCards.executor": "Run",
+    "Gradle.PersonTest.printingNewCards.executor": "Run",
+    "Gradle.PersonTest.printingPlayerCards.executor": "Run",
+    "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
+    "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
+    "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
+    "Gradle.Tests in 'nsu.chebotareva'.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.run.sh.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "#2 on Task__1__1__2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/msansdu/Documents/OOP",
+    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_2/src/main/java/nsu_chebotareva/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -119,21 +137,8 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
-      <module name="Task_1_1_2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nsu.chebotareva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardsTest.testingNames" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva'">
+    <configuration name="PersonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
@@ -146,7 +151,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.CardsTest.testingNames&quot;" />
+            <option value="&quot;nsu.chebotareva.PersonTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +162,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="FormingCardsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PersonTest.cleaningCards" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
@@ -170,7 +175,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.FormingCardsTest&quot;" />
+            <option value="&quot;nsu.chebotareva.PersonTest.cleaningCards&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,7 +186,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="FormingCardsTest.testingDealingCards" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PersonTest.dealingCards" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
@@ -194,7 +199,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.FormingCardsTest.testingDealingCards&quot;" />
+            <option value="&quot;nsu.chebotareva.PersonTest.dealingCards&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PersonTest.printingPlayerCards" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.chebotareva.PersonTest.printingPlayerCards&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.FormingCardsTest" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
-        <item itemvalue="Gradle.FormingCardsTest.testingDealingCards" />
-        <item itemvalue="Gradle.CardsTest.testingNames" />
+        <item itemvalue="Gradle.PersonTest" />
+        <item itemvalue="Gradle.PersonTest.cleaningCards" />
+        <item itemvalue="Gradle.PersonTest.dealingCards" />
+        <item itemvalue="Gradle.PersonTest.printingPlayerCards" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727082059324</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adding tests">
+      <option name="closed" value="true" />
+      <created>1727083676897</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1727083676897</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,14 +422,16 @@
     <MESSAGE value="fixing style" />
     <MESSAGE value="making OOP-style" />
     <MESSAGE value="fixing build" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing build" />
+    <MESSAGE value="adding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1727083632305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSort.ic" NAME="HeapSort Coverage Results" MODIFIED="1726139358064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu_chebotareva.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1726632496259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1727094418477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$FormingCardsTest.ic" NAME="FormingCardsTest Coverage Results" MODIFIED="1726662301666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726462624244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>

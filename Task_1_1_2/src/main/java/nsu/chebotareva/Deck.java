@@ -2,6 +2,9 @@ package nsu.chebotareva;
 
 import java.util.*;
 
+/**
+ * Колода на игру.
+ */
 public class Deck {
     static String[] namesOfCards = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка", "Семерка",
             "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
@@ -10,7 +13,15 @@ public class Deck {
 
     static List<Cards> deck = new ArrayList<>();
 
-    public static void generatingDeck(int n){
+    /**
+     * Генерация единой колоды.
+     *
+     * @param n -- сколько колод смешиваем в одну.
+     */
+    public static void generatingDeck(int n) {
+        while (!deck.isEmpty()) {
+            deck.remove(0);
+        }
         for (int k = 0; k < n; k++) {
             for (int i = 0; i < 13; i++) {
                 for (int j = 0; j < 4; j++) {
@@ -23,10 +34,20 @@ public class Deck {
         }
     }
 
+    /**
+     * Перемещшиваем колоду.
+     */
     public static void shufflingDeck() {
         Collections.shuffle(deck);
     }
 
+    /**
+     * Создает правильное имя для карты с учетом рода и порядка слов.
+     *
+     * @param numCard -- номер карты.
+     * @param numSuit -- масть.
+     * @return -- String имя карты.
+     */
     private static String generatingName(int numCard, int numSuit) {
         String name;
         if (numCard < 9 || numCard == 12) {

@@ -2,13 +2,18 @@ package nsu.chebotareva;
 
 import java.util.Scanner;
 
+/**
+ * Main.
+ */
 public class Main {
     /**
      * Метод, проводящий один раунд игры.
      *
-     * @param numberOfRound -- номер текущего раунда.
-     * @param sc -- сканнер, поток ввода.
-     * @return -- выиграл ли игрок? (1 - выиграл, 0 - проиграл, 3 - ничья).
+     * @param numberOfRound -- номер раунда.
+     * @param sc -- сканнер.
+     * @param player -- ссылка на игрока.
+     * @param dealer -- ссылка на дилера.
+     * @return -- выигрыш игрока(1), проигрыш(0), ничья(3), конец колоды(4).
      */
     public static int round(int numberOfRound, Scanner sc, Person player, Person dealer) {
         if (player.dealingCards(2) == 0) {
@@ -123,6 +128,13 @@ public class Main {
         endOfGame(player, dealer, sc);
     }
 
+    /**
+     * Выводит конец раунда.
+     *
+     * @param player -- ссылка на игрока.
+     * @param dealer -- ссылка на дилера.
+     * @param win -- выиграл игрок(1), дилер(0), ничья(3).
+     */
     private static void endOfRound(Person player, Person dealer, int win) {
         if (win == 1) {
             System.out.printf("%nВы выиграли раунд! Счет %d:%d в вашу пользу.%n",
@@ -137,6 +149,13 @@ public class Main {
                 + "чтобы прекратить.");
     }
 
+    /**
+     * Выводит конец игры.
+     *
+     * @param player -- ссылка на игрока.
+     * @param dealer -- ссылка на дилера.
+     * @param sc -- сканер.
+     */
     private static void endOfGame(Person player, Person dealer, Scanner sc) {
         sc.close();
         System.out.printf("\nИгра окончена!\nСчет %d:%d%s%n", player.score, dealer.score,

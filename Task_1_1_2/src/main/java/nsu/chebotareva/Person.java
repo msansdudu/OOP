@@ -3,6 +3,9 @@ package nsu.chebotareva;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Персонаж.
+ */
 public class Person {
     List<Cards> cards = new ArrayList<>();
     Boolean isDealer;
@@ -11,6 +14,9 @@ public class Person {
     int sumOfCosts = 0;
     int score = 0;
 
+    /**
+     * Печатает карты на руках персонажа.
+     */
     public void printingCards() {
         if (!isDealer) {
             System.out.print("\tВаши карты: [");
@@ -28,12 +34,15 @@ public class Person {
                 System.out.printf("%s (%d)] => %d%n", cards.get(amountOfCards - 1).name,
                         cards.get(amountOfCards - 1).cost, sumOfCosts);
             } else {
-                System.out.printf("\tКарты дилера: [%s (%d), <закрытая карта>]%n",
+                System.out.printf("\tКарты дилера: [%s (%d), <Закрытая карта>]%n",
                         cards.get(0).name, cards.get(0).cost);
             }
         }
     }
 
+    /**
+     * Печатает новую карту.
+     */
     public void printingNewCards() {
         if (!isDealer) {
             System.out.printf("Вы открыли карту %s (%d)%n", cards.get(this.amountOfCards - 1).name,
@@ -49,6 +58,12 @@ public class Person {
         }
     }
 
+    /**
+     * Раздача новых карт.
+     *
+     * @param times -- сколько новых карт выдаем.
+     * @return -- колода кончилась (0), колода не пуста (1).
+     */
     public int dealingCards(int times) {
         for (int i = 0; i < times; i++) {
             if (Deck.deck.isEmpty()) {
@@ -73,9 +88,12 @@ public class Person {
         return 1;
     }
 
+    /**
+     * Удаление всех карт с рук.
+     */
     public void cleaningCards(){
-        for (int i = 0; i < amountOfCards; i++){
-            cards.remove(0);
+        if (amountOfCards > 0) {
+            cards.subList(0, amountOfCards).clear();
         }
         amountOfCards = 0;
         sumOfCosts = 0;
