@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"nsu.chebotareva","l":"FormingCards"},{"p":"nsu.chebotareva","l":"Main"},{"p":"nsu.chebotareva","l":"Person"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"nsu.chebotareva","l":"Cards"},{"p":"nsu.chebotareva","l":"Deck"},{"p":"nsu.chebotareva","l":"Main"},{"p":"nsu.chebotareva","l":"Person"}]
