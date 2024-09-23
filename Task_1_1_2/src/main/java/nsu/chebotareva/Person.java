@@ -1,75 +1,83 @@
 package nsu.chebotareva;
 
-/**
- * Класс персонажа. Храним информацию о персонаже и работаем с его набором карт.
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Person {
-    /**
-     * Для конкретного Person имеем его набор карт, их соответствующие стоимости.
-     * А также их количество и сумму очков.
-     */
-    String[] cards = new String[21];
-    int[] costs = new int[21];
+    List<Cards> cards = new ArrayList<>();
+    Boolean isDealer;
+    Boolean isOpenDealer;
     int amountOfCards = 0;
     int sumOfCosts = 0;
+    int score = 0;
 
-    /**
-     * Метод, выводящий карты, которые сейчас на руках у заданного персонажа.
-     *
-     * @param isDealer -- персонаж, чьи карты выводим -- дилер?
-     * @param isOpenDealer -- открыта ли вторая карта у дилера?
-     */
-    public void printingCards(Boolean isDealer, Boolean isOpenDealer) {
+    public void printingCards() {
         if (!isDealer) {
             System.out.print("\tВаши карты: [");
             for (int i = 0; i < amountOfCards - 1; i++) {
-                System.out.printf("%s (%d), ", cards[i], costs[i]);
+                System.out.printf("%s (%d), ", cards.get(i).name, cards.get(i).cost);
             }
-            System.out.printf("%s (%d)] => %d%n", cards[amountOfCards - 1],
-                    costs[amountOfCards - 1], sumOfCosts);
+            System.out.printf("%s (%d)] => %d%n", cards.get(amountOfCards - 1).name,
+                    cards.get(amountOfCards - 1).cost, sumOfCosts);
         } else {
             if (isOpenDealer) {
                 System.out.print("\tКарты дилера: [");
                 for (int i = 0; i < amountOfCards - 1; i++) {
-                    System.out.printf("%s (%d), ", cards[i], costs[i]);
+                    System.out.printf("%s (%d), ", cards.get(i).name, cards.get(i).cost);
                 }
-                System.out.printf("%s (%d)] => %d%n", cards[amountOfCards - 1],
-                        costs[amountOfCards - 1], sumOfCosts);
+                System.out.printf("%s (%d)] => %d%n", cards.get(amountOfCards - 1).name,
+                        cards.get(amountOfCards - 1).cost, sumOfCosts);
             } else {
                 System.out.printf("\tКарты дилера: [%s (%d), <закрытая карта>]%n",
-                        cards[0], costs[0]);
+                        cards.getFirst().name, cards.getFirst().cost);
             }
         }
     }
 
-    /**
-     * Выдаем карту игроку.
-     *
-     * @param dealer -- ссылка на дилера.
-     */
-    public void newCardForPlayer(Person dealer) {
-        FormingCards.dealingCards(this, 1);
-        System.out.printf("Вы открыли карту %s (%d)%n", this.cards[this.amountOfCards - 1],
-                this.costs[this.amountOfCards - 1]);
-        printingCards(Boolean.FALSE, Boolean.FALSE);
-        dealer.printingCards(Boolean.TRUE, Boolean.FALSE);
+    public void printingNewCards() {
+        if (!isDealer) {
+            System.out.printf("Вы открыли карту %s (%d)%n", cards.get(this.amountOfCards - 1).name,
+                    cards.get(this.amountOfCards - 1).cost);
+        } else {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.printf("%nДилер открывает карту %s (%d)%n", cards.get(this.amountOfCards - 1).name,
+                    cards.get(this.amountOfCards - 1).cost);
+        }
     }
 
-    /**
-     * Выдаем карту дилеру.
-     *
-     * @param player -- ссылка на игрока.
-     */
-    public void newCardForDealer(Person player) {
-        FormingCards.dealingCards(this, 1);
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+    public int dealingCards(int times) {
+        for (int i = 0; i < times; i++) {
+            if (Deck.deck.isEmpty()) {
+                return 0;
+            }
+            cards.add(Deck.deck.getFirst()); // выдали карты
+            Deck.deck.removeFirst();
+            sumOfCosts += cards.get(amountOfCards).cost; // обновляем суммарную стоимость
+            amountOfCards++;
+            if (sumOfCosts > 21) { // если новая карта превысила стоимость
+                for (int j = 0; j < amountOfCards; j++) {
+                    if (cards.get(j).cost == 11) { // ищем туз и меняем его стоимость
+                        sumOfCosts -= 10;
+                        Cards tmp = new Cards();
+                        tmp.cost = 1;
+                        tmp.name = cards.get(j).name;
+                        cards.set(j, tmp);
+                    }
+                }
+            }
         }
-        System.out.printf("%nДилер открывает карту %s (%d)%n", this.cards[this.amountOfCards - 1],
-                this.costs[this.amountOfCards - 1]);
-        player.printingCards(Boolean.FALSE, Boolean.FALSE);
-        printingCards(Boolean.TRUE, Boolean.TRUE);
+        return 1;
+    }
+
+    public void cleaningCards(){
+        for (int i = 0; i < amountOfCards; i++){
+            cards.removeFirst();
+        }
+        amountOfCards = 0;
+        sumOfCosts = 0;
     }
 }
