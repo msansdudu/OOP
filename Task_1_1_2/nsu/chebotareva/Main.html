@@ -132,6 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Main</span>
 extends java.lang.Object</pre>
+<div class="block">Main.</div>
 </li>
 </ul>
 </div>
@@ -253,10 +254,12 @@ extends java.lang.Object</pre>
 <div class="block">Метод, проводящий один раунд игры.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>numberOfRound</code> - -- номер текущего раунда.</dd>
-<dd><code>sc</code> - -- сканнер, поток ввода.</dd>
+<dd><code>numberOfRound</code> - -- номер раунда.</dd>
+<dd><code>sc</code> - -- сканнер.</dd>
+<dd><code>player</code> - -- ссылка на игрока.</dd>
+<dd><code>dealer</code> - -- ссылка на дилера.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- выиграл ли игрок? (1 - выиграл, 0 - проиграл, 3 - ничья).</dd>
+<dd>-- выигрыш игрока(1), проигрыш(0), ничья(3), конец колоды(4).</dd>
 </dl>
 </li>
 </ul>
