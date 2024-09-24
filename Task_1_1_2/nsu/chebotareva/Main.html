@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,19 +176,37 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#endOfGame(nsu.chebotareva.Person,nsu.chebotareva.Person,java.util.Scanner)">endOfGame</a></span>&#8203;(<a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;player,
+         <a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;dealer,
+         java.util.Scanner&nbsp;sc)</code></th>
+<td class="colLast">
+<div class="block">Выводит конец игры.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#endOfRound(nsu.chebotareva.Person,nsu.chebotareva.Person,int)">endOfRound</a></span>&#8203;(<a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;player,
+          <a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;dealer,
+          int&nbsp;win)</code></th>
+<td class="colLast">
+<div class="block">Выводит конец раунда.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#game()">game</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Метод, проводящий игру, пока игрок не захочет прекратить.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#main(java.lang.String%5B%5D)">main</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
 <td class="colLast">
 <div class="block">Main.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#round(int,java.util.Scanner,nsu.chebotareva.Person,nsu.chebotareva.Person)">round</a></span>&#8203;(int&nbsp;numberOfRound,
      java.util.Scanner&nbsp;sc,
@@ -271,6 +289,42 @@ extends java.lang.Object</pre>
 <h4>game</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;game()</pre>
 <div class="block">Метод, проводящий игру, пока игрок не захочет прекратить.</div>
+</li>
+</ul>
+<a id="endOfRound(nsu.chebotareva.Person,nsu.chebotareva.Person,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>endOfRound</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;endOfRound&#8203;(<a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;player,
+                              <a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;dealer,
+                              int&nbsp;win)</pre>
+<div class="block">Выводит конец раунда.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - -- ссылка на игрока.</dd>
+<dd><code>dealer</code> - -- ссылка на дилера.</dd>
+<dd><code>win</code> - -- выиграл игрок(1), дилер(0), ничья(3).</dd>
+</dl>
+</li>
+</ul>
+<a id="endOfGame(nsu.chebotareva.Person,nsu.chebotareva.Person,java.util.Scanner)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>endOfGame</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;endOfGame&#8203;(<a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;player,
+                             <a href="Person.html" title="class in nsu.chebotareva">Person</a>&nbsp;dealer,
+                             java.util.Scanner&nbsp;sc)</pre>
+<div class="block">Выводит конец игры.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>player</code> - -- ссылка на игрока.</dd>
+<dd><code>dealer</code> - -- ссылка на дилера.</dd>
+<dd><code>sc</code> - -- сканер.</dd>
+</dl>
 </li>
 </ul>
 <a id="main(java.lang.String[])">
