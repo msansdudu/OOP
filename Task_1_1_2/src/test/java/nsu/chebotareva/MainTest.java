@@ -15,10 +15,9 @@ class MainTest {
         player.score = 2;
         dealer.score = 1;
         int win = 1;
-        String mustBe = """
-                Вы выиграли раунд! Счет 2:1 в вашу пользу.
-                
-                Желаете продолжить игру? Введите “1”, чтобы продолжить, и “0”, чтобы прекратить.""";
+        String mustBe = "Вы выиграли раунд! Счет 2:1 в вашу пользу.\n\n"
+                + "Желаете продолжить игру? Введите “1”, чтобы продолжить, и “0”,"
+                + " чтобы прекратить.";
         // Создаем поток для захвата вывода
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
@@ -43,10 +42,9 @@ class MainTest {
         player.score = 1;
         dealer.score = 2;
         int win = 0;
-        String mustBe = """
-                Вы проиграли раунд! Счет 1:2 в пользу дилера.
-                
-                Желаете продолжить игру? Введите “1”, чтобы продолжить, и “0”, чтобы прекратить.""";
+        String mustBe = "Вы проиграли раунд! Счет 1:2 в пользу дилера.\n\n"
+                + "Желаете продолжить игру? Введите “1”, чтобы продолжить, и “0”,"
+                + " чтобы прекратить.";
         // Создаем поток для захвата вывода
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
@@ -71,10 +69,9 @@ class MainTest {
         player.score = 3;
         dealer.score = 1;
         int win = 3;
-        String mustBe = """
-                Ничья! Счет 3:1 в вашу пользу.
-                
-                Желаете продолжить игру? Введите “1”, чтобы продолжить, и “0”, чтобы прекратить.""";
+        String mustBe = "Ничья! Счет 3:1 в вашу пользу.\n\n"
+                + "Желаете продолжить игру? Введите “1”, чтобы продолжить, и “0”,"
+                + " чтобы прекратить.";
         // Создаем поток для захвата вывода
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
@@ -99,9 +96,7 @@ class MainTest {
         Scanner sc = new Scanner(System.in);
         player.score = 2;
         dealer.score = 1;
-        String mustBe = """
-                Игра окончена!
-                Счет 2:1 в вашу пользу.""";
+        String mustBe = "Игра окончена!\nСчет 2:1 в вашу пользу.";
         // Создаем поток для захвата вывода
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
@@ -126,9 +121,7 @@ class MainTest {
         Scanner sc = new Scanner(System.in);
         player.score = 3;
         dealer.score = 3;
-        String mustBe = """
-                Игра окончена!
-                Счет 3:3. Ничья!""";
+        String mustBe = "Игра окончена!\nСчет 3:3. Ничья!";
         // Создаем поток для захвата вывода
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
