@@ -18,10 +18,12 @@ public class Main {
     public static int round(int numberOfRound, Scanner sc, Person player, Person dealer) {
         if (player.dealingCards(2) == 0) {
             System.out.println("Колода кончилась!");
+            endOfGame(player, dealer, sc);
             return 4;
         }
         if (dealer.dealingCards(2) == 0) {
             System.out.println("Колода кончилась!");
+            endOfGame(player, dealer, sc);
             return 4;
         }
         dealer.isOpenDealer = Boolean.FALSE;
@@ -39,6 +41,7 @@ public class Main {
         while (sc.nextInt() == 1) {
             if (player.dealingCards(1) == 0) {
                 System.out.println("Колода кончилась!");
+                endOfGame(player, dealer, sc);
                 return 4;
             }
             player.printingNewCards();
@@ -65,6 +68,7 @@ public class Main {
         while (dealer.sumOfCosts < 17) {
             if (dealer.dealingCards(2) == 0) {
                 System.out.println("Колода кончилась!");
+                endOfGame(player, dealer, sc);
                 return 4;
             }
             dealer.printingNewCards();
@@ -89,18 +93,15 @@ public class Main {
     /**
      * Метод, проводящий игру, пока игрок не захочет прекратить.
      */
-    public static void game() {
+    public static void game(Scanner sc) {
         Person player = new Person();
         Person dealer = new Person();
         player.isDealer = Boolean.FALSE;
         dealer.isDealer = Boolean.TRUE;
 
-        Scanner sc = new Scanner(System.in);
-        int n;
-
         System.out.println("Добро пожаловать в Блэкджек!\n");
         System.out.println("Сколько колод желаете использовать?");
-        n = sc.nextInt();
+        int n = sc.nextInt();
 
         Deck.generatingDeck(n);
         Deck.shufflingDeck();
@@ -116,8 +117,6 @@ public class Main {
 
         while (sc.nextInt() == 1) {
             rounds++;
-            player.cleaningCards();
-            dealer.cleaningCards();
             win = round(rounds, sc, player, dealer);
             if (win == 4) {
                 endOfGame(player, dealer, sc);
@@ -140,18 +139,22 @@ public class Main {
             System.out.printf("%nВы выиграли раунд! Счет %d:%d%s%n",
                     player.score, dealer.score,
                     player.score > dealer.score ? " в вашу пользу." :
-                            (player.score == dealer.score) ? ". Счет сравнялся!" : " в пользу дилера.");
+                            (player.score == dealer.score) ? ". Счет сравнялся!" :
+                                    " в пользу дилера.");
         } else if (win == 0) {
             System.out.printf("%nВы проиграли раунд! Счет %d:%d%s%n",
                     player.score, dealer.score,
                     player.score > dealer.score ? " в вашу пользу." :
-                            (player.score == dealer.score) ? ". Счет сравнялся!" : " в пользу дилера.");
+                            (player.score == dealer.score) ? ". Счет сравнялся!" :
+                                    " в пользу дилера.");
         } else {
             System.out.printf("Ничья! Счет %d:%d%s%n", player.score, dealer.score,
                     player.score > dealer.score ? " в вашу пользу." :
                             (player.score == dealer.score) ? ". Счет сравнялся!" :
                                     " в пользу дилера.");
         }
+        player.cleaningCards();
+        dealer.cleaningCards();
         System.out.println("\nЖелаете продолжить игру? Введите “1”, чтобы продолжить, и “0”, "
                 + "чтобы прекратить.");
     }
@@ -176,6 +179,7 @@ public class Main {
      * @param args -- входные данные.
      */
     public static void main(String[] args) {
-        game();
+        Scanner sc = new Scanner(System.in);
+        game(sc);
     }
 }

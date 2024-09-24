@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="adding tests and fixing style">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,13 +96,15 @@
     "Gradle.HeapSortTest (1).executor": "Coverage",
     "Gradle.HeapSortTest.executor": "Coverage",
     "Gradle.HeapSortTest.test_heapify.executor": "Run",
+    "Gradle.MainTest.emptyDeck.executor": "Run",
     "Gradle.MainTest.endOfGame.executor": "Run",
     "Gradle.MainTest.endOfGame1.executor": "Run",
     "Gradle.MainTest.endOfGame2.executor": "Run",
     "Gradle.MainTest.endOfRound.executor": "Run",
     "Gradle.MainTest.endOfRound2.executor": "Run",
     "Gradle.MainTest.endOfRound3.executor": "Run",
-    "Gradle.MainTest.executor": "Coverage",
+    "Gradle.MainTest.executor": "Run",
+    "Gradle.MainTest.game.executor": "Run",
     "Gradle.PersonTest.checkingAces.executor": "Run",
     "Gradle.PersonTest.cleaningCards.executor": "Run",
     "Gradle.PersonTest.dealingCards.executor": "Run",
@@ -144,7 +148,20 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva'">
-    <configuration name="MainTest.endOfGame" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
+      <module name="Task_1_1_2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nsu.chebotareva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
@@ -157,7 +174,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.MainTest.endOfGame&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +185,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MainTest.endOfGame1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainTest.emptyDeck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
@@ -181,7 +198,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.MainTest.endOfGame1&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest.emptyDeck&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,7 +209,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MainTest.endOfGame2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainTest.game" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
@@ -205,7 +222,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.MainTest.endOfGame2&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest.game&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -240,27 +257,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="nsu.chebotareva in Task_1_1_2.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Task_1_1_2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nsu.chebotareva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nsu.chebotareva" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
-        <item itemvalue="Gradle.MainTest.endOfGame1" />
-        <item itemvalue="JUnit.nsu.chebotareva in Task_1_1_2.main" />
-        <item itemvalue="Gradle.MainTest.endOfGame2" />
-        <item itemvalue="Gradle.MainTest.endOfGame" />
+        <item itemvalue="Gradle.MainTest.emptyDeck" />
+        <item itemvalue="Gradle.MainTest.game" />
+        <item itemvalue="Gradle.MainTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -409,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727146573725</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adding tests and fixing style">
+      <option name="closed" value="true" />
+      <created>1727147187569</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727147187569</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +455,7 @@
     <SUITE FILE_PATH="coverage/OOP$HeapSort.ic" NAME="HeapSort Coverage Results" MODIFIED="1726139358064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu_chebotareva.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1727146300243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1727149077683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$FormingCardsTest.ic" NAME="FormingCardsTest Coverage Results" MODIFIED="1726662301666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726462624244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1727145995532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

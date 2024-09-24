@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class MainTest {
     @Test
-    public void endOfRound1(){
+    void endOfRound1() {
         Person player = new Person();
         Person dealer = new Person();
         player.score = 2;
@@ -36,7 +36,7 @@ class MainTest {
     }
 
     @Test
-    public void endOfRound2(){
+    void endOfRound2() {
         Person player = new Person();
         Person dealer = new Person();
         player.score = 1;
@@ -63,7 +63,7 @@ class MainTest {
     }
 
     @Test
-    public void endOfRound3(){
+    void endOfRound3() {
         Person player = new Person();
         Person dealer = new Person();
         player.score = 3;
@@ -90,7 +90,7 @@ class MainTest {
     }
 
     @Test
-    public void endOfGame1(){
+    void endOfGame1() {
         Person player = new Person();
         Person dealer = new Person();
         Scanner sc = new Scanner(System.in);
@@ -115,7 +115,7 @@ class MainTest {
     }
 
     @Test
-    public void endOfGame2(){
+    void endOfGame2() {
         Person player = new Person();
         Person dealer = new Person();
         Scanner sc = new Scanner(System.in);
@@ -132,6 +132,76 @@ class MainTest {
 
         try {
             Main.endOfGame(player, dealer, sc); // Получаем вывод
+            String output = outputStream.toString().trim(); // Удаляем лишние пробелы и переносы
+            assertEquals(mustBe, output); // Проверяем, что вывод соответствует ожидаемому
+        } finally {
+            System.setOut(originalOut); // Восстанавливаем оригинальный поток
+        }
+    }
+
+    @Test
+    void game() {
+        Scanner sc = new Scanner("1 0 0");
+        Main.game(sc);
+        sc = new Scanner("1 1 0 0");
+        Main.game(sc);
+    }
+
+    @Test
+    void emptyDeck1() {
+        while (!Deck.deck.isEmpty()) {
+            Deck.deck.remove(0);
+        }
+        Scanner sc = new Scanner("1 1 1 0");
+        Person player = new Person();
+        Person dealer = new Person();
+        Cards card1 = new Cards();
+        Cards card2 = new Cards();
+        card1.name = "f";
+        card1.cost = 2;
+        card2.name = "f";
+        card2.cost = 2;
+        Deck.deck.add(card1);
+        Deck.deck.add(card2);
+
+        String mustBe = "Колода кончилась!\n\nИгра окончена!\nСчет 0:0. Ничья!";
+        // Создаем поток для захвата вывода
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        PrintStream printStream = new PrintStream(outputStream);
+
+        // Сохраняем оригинальный поток
+        PrintStream originalOut = System.out;
+        System.setOut(printStream); // Перенаправляем System.out
+
+        try {
+            Main.round(2, sc, player, dealer); // Получаем вывод
+            String output = outputStream.toString().trim(); // Удаляем лишние пробелы и переносы
+            assertEquals(mustBe, output); // Проверяем, что вывод соответствует ожидаемому
+        } finally {
+            System.setOut(originalOut); // Восстанавливаем оригинальный поток
+        }
+    }
+
+    @Test
+    void emptyDeck2() {
+        while (!Deck.deck.isEmpty()) {
+            Deck.deck.remove(0);
+        }
+        Scanner sc = new Scanner("1 1 1 0");
+        Person player = new Person();
+        Person dealer = new Person();
+
+        String mustBe = "Колода кончилась!\n\nИгра окончена!\nСчет 0:0. Ничья!";
+        // Создаем поток для захвата вывода
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        PrintStream printStream = new PrintStream(outputStream);
+
+        // Сохраняем оригинальный поток
+        PrintStream originalOut = System.out;
+        System.setOut(printStream); // Перенаправляем System.out
+
+        try {
+            Main.round(2, sc, player, dealer); // Получаем вывод
             String output = outputStream.toString().trim(); // Удаляем лишние пробелы и переносы
             assertEquals(mustBe, output); // Проверяем, что вывод соответствует ожидаемому
         } finally {
