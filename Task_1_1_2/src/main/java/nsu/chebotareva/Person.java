@@ -45,7 +45,8 @@ public class Person {
      */
     public void printingNewCards() {
         if (!isDealer) {
-            System.out.printf("Вы открыли карту %s (%d)%n", cards.get(this.amountOfCards - 1).name,
+            System.out.printf("Вы открыли карту %s (%d)%n",
+                    cards.get(this.amountOfCards - 1).name,
                     cards.get(this.amountOfCards - 1).cost);
         } else {
             try {
@@ -53,7 +54,8 @@ public class Person {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.printf("%nДилер открывает карту %s (%d)%n", cards.get(this.amountOfCards - 1).name,
+            System.out.printf("%nДилер открывает карту %s (%d)%n",
+                    cards.get(this.amountOfCards - 1).name,
                     cards.get(this.amountOfCards - 1).cost);
         }
     }
@@ -91,7 +93,7 @@ public class Person {
     /**
      * Удаление всех карт с рук.
      */
-    public void cleaningCards(){
+    public void cleaningCards() {
         if (amountOfCards > 0) {
             cards.subList(0, amountOfCards).clear();
         }

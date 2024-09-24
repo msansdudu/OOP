@@ -1,13 +1,16 @@
 package nsu.chebotareva;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * Колода на игру.
  */
 public class Deck {
-    static String[] namesOfCards = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка", "Семерка",
-            "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
+    static String[] namesOfCards = {"Двойка", "Тройка", "Четверка", "Пятерка", "Шестерка",
+            "Семерка", "Восьмерка", "Девятка", "Десятка", "Валет", "Дама", "Король", "Туз"};
     static String[] suits = {"Пики", "Червы", "Бубны", "Трефы"};
     static int[] costs = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
