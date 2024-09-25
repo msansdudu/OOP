@@ -66,7 +66,7 @@ public class Main {
         player.printingCards();
         dealer.printingCards();
         while (dealer.sumOfCosts < 17) {
-            if (dealer.dealingCards(2) == 0) {
+            if (dealer.dealingCards(1) == 0) {
                 System.out.println("Колода кончилась!");
                 endOfGame(player, dealer, sc);
                 return 4;
@@ -81,6 +81,7 @@ public class Main {
         }
         if (player.sumOfCosts > dealer.sumOfCosts) {
             player.score++;
+            return 1;
         } else if (player.sumOfCosts == dealer.sumOfCosts) {
             player.score++;
             dealer.score++;
