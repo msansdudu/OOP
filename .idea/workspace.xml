@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="better coverage">
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="creating task">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Mul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Sub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Variable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Number.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,6 +93,7 @@
     "Gradle.HeapSortTest.test_heapify.executor": "Run",
     "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
+    "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.run.sh.executor": "Run",
@@ -119,10 +120,10 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.run.sh">
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.HeapSort" />
-      <module name="Task_1_1_1.main" />
+  <component name="RunManager" selected="Application.Expression">
+    <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
+      <module name="Task_1_1_3.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nsu.chebotareva.*" />
@@ -222,10 +223,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Expression" />
         <item itemvalue="Shell Script.run.sh" />
         <item itemvalue="Gradle.HeapSortTest (1)" />
         <item itemvalue="Gradle.HeapSortTest.test_heapify" />
-        <item itemvalue="Application.nsu.chebotareva.HeapSort" />
         <item itemvalue="Gradle.HeapSortTest" />
       </list>
     </recent_temporary>
@@ -271,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726148202652</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="creating task">
+      <option name="closed" value="true" />
+      <created>1727236958005</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727236958005</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,18 +299,8 @@
     <MESSAGE value="first commit task1" />
     <MESSAGE value="first fixing style" />
     <MESSAGE value="better coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="better coverage" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="creating task" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating task" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
