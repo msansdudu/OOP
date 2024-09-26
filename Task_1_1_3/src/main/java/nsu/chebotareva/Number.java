@@ -1,8 +1,16 @@
 package nsu.chebotareva;
 
+/**
+ * Класс чисел.
+ */
 public class Number extends Expression {
     private final int num;
 
+    /**
+     * Принимает число.
+     *
+     * @param num -- число.
+     */
     public Number(int num) {
         this.num = num;
     }

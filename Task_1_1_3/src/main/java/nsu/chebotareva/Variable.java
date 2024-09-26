@@ -2,9 +2,17 @@ package nsu.chebotareva;
 
 import java.util.Objects;
 
+/**
+ * Класс переменных.
+ */
 public class Variable extends Expression {
     private final String var;
 
+    /**
+     * Принимает название переменной.
+     *
+     * @param var -- название типа String.
+     */
     public Variable(String var) {
         this.var = var;
     }

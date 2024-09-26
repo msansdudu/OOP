@@ -1,9 +1,18 @@
 package nsu.chebotareva;
 
+/**
+ * Класс сложения.
+ */
 public class Add extends Expression {
     private final Expression left;
     private final Expression right;
 
+    /**
+     * Принимает слагаемые.
+     *
+     * @param left -- первое слагаемое.
+     * @param right -- второе слагаемое.
+     */
     public Add(Expression left, Expression right) {
         this.left = left;
         this.right = right;

@@ -1,9 +1,18 @@
 package nsu.chebotareva;
 
+/**
+ * Класс умножения.
+ */
 public class Mul extends Expression {
     private final Expression left;
     private final Expression right;
 
+    /**
+     * Принимает множители.
+     *
+     * @param left -- первый множитель.
+     * @param right -- второй множитель.
+     */
     public Mul(Expression left, Expression right) {
         this.left = left;
         this.right = right;

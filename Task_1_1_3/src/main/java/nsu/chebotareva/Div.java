@@ -1,9 +1,18 @@
 package nsu.chebotareva;
 
+/**
+ * Класс деления.
+ */
 public class Div extends Expression {
     private final Expression left;
     private final Expression right;
 
+    /**
+     * Принимает два выражения.
+     *
+     * @param left -- числитель.
+     * @param right -- знаменатель.
+     */
     public Div(Expression left, Expression right) {
         this.left = left;
         this.right = right;

@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="creating task">
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Mul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Sub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Variable.java" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="print, derivate, eval">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/DerivateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/EvalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/Printing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Mul.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Mul.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Number.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Sub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Variable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,9 @@
         <task path="$PROJECT_DIR$/Task_1_1_1">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/Task_1_1_3">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -50,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -88,18 +94,25 @@
   "keyToString": {
     "Application.HeapSort.executor": "Coverage",
     "Gradle.Build Task_1_1_1.executor": "Run",
+    "Gradle.ExpressionTest.derivative1.executor": "Run",
+    "Gradle.ExpressionTest.derivative2.executor": "Run",
+    "Gradle.ExpressionTest.derivative3.executor": "Run",
+    "Gradle.ExpressionTest.print.executor": "Run",
+    "Gradle.ExpressionTest.realPrint.executor": "Run",
+    "Gradle.ExpressionTest.realPrint2.executor": "Run",
     "Gradle.HeapSortTest (1).executor": "Coverage",
     "Gradle.HeapSortTest.executor": "Coverage",
     "Gradle.HeapSortTest.test_heapify.executor": "Run",
     "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
+    "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__1__1__3",
+    "git-widget-placeholder": "#3 on Task__1__1__3",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
     "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
@@ -117,27 +130,15 @@
       <recent name="$PROJECT_DIR$/Task_1_1_1/META-INF" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="nsu.chebotareva" />
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Expression">
-    <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
-      <module name="Task_1_1_3.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nsu.chebotareva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeapSortTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva'">
+    <configuration name="ExpressionTest.derivative1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -147,7 +148,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.HeapSortTest&quot;" />
+            <option value="&quot;nsu.chebotareva.ExpressionTest.derivative1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,10 +159,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HeapSortTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ExpressionTest.derivative2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -171,7 +172,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu_chebotareva.HeapSortTest&quot;" />
+            <option value="&quot;nsu.chebotareva.ExpressionTest.derivative2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,10 +183,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HeapSortTest.test_heapify" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ExpressionTest.derivative3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -195,7 +196,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.HeapSortTest.test_heapify&quot;" />
+            <option value="&quot;nsu.chebotareva.ExpressionTest.derivative3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,28 +207,61 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="run.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/Task_1_1_1/run.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/Task_1_1_1" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/zsh" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
+    <configuration name="ExpressionTest.realPrint2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.chebotareva.ExpressionTest.realPrint2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'nsu.chebotareva'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.chebotareva.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Expression" />
-        <item itemvalue="Shell Script.run.sh" />
-        <item itemvalue="Gradle.HeapSortTest (1)" />
-        <item itemvalue="Gradle.HeapSortTest.test_heapify" />
-        <item itemvalue="Gradle.HeapSortTest" />
+        <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
+        <item itemvalue="Gradle.ExpressionTest.derivative3" />
+        <item itemvalue="Gradle.ExpressionTest.derivative2" />
+        <item itemvalue="Gradle.ExpressionTest.derivative1" />
+        <item itemvalue="Gradle.ExpressionTest.realPrint2" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727236958005</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="print, derivate, eval">
+      <option name="closed" value="true" />
+      <created>1727266381844</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727266381844</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,13 +342,15 @@
     <MESSAGE value="first fixing style" />
     <MESSAGE value="better coverage" />
     <MESSAGE value="creating task" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating task" />
+    <MESSAGE value="print, derivate, eval" />
+    <option name="LAST_COMMIT_MESSAGE" value="print, derivate, eval" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSort.ic" NAME="HeapSort Coverage Results" MODIFIED="1726139358064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu_chebotareva.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1727317611840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726204195609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
