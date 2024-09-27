@@ -184,12 +184,8 @@ class MainTest {
         Scanner sc = new Scanner("1 1 1 0");
         Person player = new Person();
         Person dealer = new Person();
-        Cards card1 = new Cards();
-        Cards card2 = new Cards();
-        card1.name = "f";
-        card1.cost = 2;
-        card2.name = "f";
-        card2.cost = 2;
+        Cards card1 = new Cards("f", 2);
+        Cards card2 = new Cards("f", 2);
         Deck.deck.add(card1);
         Deck.deck.add(card2);
 
@@ -246,8 +242,6 @@ class MainTest {
         }
         string += "0";
         Scanner sc = new Scanner(string);
-        Person player = new Person();
-        Person dealer = new Person();
 
         String mustContain = "Колода кончилась!";
         // Создаем поток для захвата вывода

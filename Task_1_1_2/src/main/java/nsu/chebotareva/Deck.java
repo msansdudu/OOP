@@ -28,9 +28,7 @@ public class Deck {
         for (int k = 0; k < n; k++) {
             for (int i = 0; i < 13; i++) {
                 for (int j = 0; j < 4; j++) {
-                    Cards newCard = new Cards();
-                    newCard.name = generatingName(i, j);
-                    newCard.cost = costs[i];
+                    Cards newCard = new Cards(generatingName(i, j), costs[i]);
                     deck.add(newCard);
                 }
             }

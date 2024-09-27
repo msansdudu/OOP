@@ -16,8 +16,8 @@ class PersonTest {
         Cards card = player.cards.get(0);
         String name = "Двойка Пики";
         int cost = 2;
-        assertEquals(card.name, name);
-        assertEquals(card.cost, cost);
+        assertEquals(card.getName(), name);
+        assertEquals(card.getCost(), cost);
         assertEquals(player.amountOfCards, 1);
     }
 
@@ -161,18 +161,14 @@ class PersonTest {
     void checkingAces() {
         Person player = new Person();
         player.isDealer = Boolean.FALSE;
-        Cards ace = new Cards();
-        Cards card = new Cards();
-        ace.name = "Туз Пики";
-        card.name = "Девятка Пики";
-        ace.cost = 11;
-        card.cost = 9;
+        Cards ace = new Cards("Туз Пики", 11);
+        Cards card = new Cards("Девятка Пики", 9);
         player.cards.add(ace);
         player.cards.add(card);
         player.amountOfCards = 2;
         player.sumOfCosts = 20;
         Deck.generatingDeck(1);
         player.dealingCards(1);
-        assertEquals(1, player.cards.get(0).cost);
+        assertEquals(1, player.cards.get(0).getCost());
     }
 }

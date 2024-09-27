@@ -61,7 +61,7 @@ public class Main {
         // игрок набрал карты
 
         System.out.printf("%nХод дилера%n-------%nДилер открывает закрытую карту %s (%d)%n",
-                dealer.cards.get(1).name, dealer.cards.get(1).cost);
+                dealer.cards.get(1).getName(), dealer.cards.get(1).getCost());
         dealer.isOpenDealer = Boolean.TRUE;
         player.printingCards();
         dealer.printingCards();
