@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="adding tests and fixing style">
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="all without parsing">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Task_1_1_1.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Task_1_1_1.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Task_1_1_2.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Task_1_1_2.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Cards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/main/java/nsu/chebotareva/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_2/src/test/java/nsu/chebotareva/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/Task_1_1_2">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Task_1_1_3">
       <ProjectState />
     </projectState>
   </component>
@@ -53,8 +69,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,6 +94,9 @@
     &quot;accountId&quot;: &quot;971ff570-528c-4f60-afb8-cae1247a0bc8&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -124,6 +143,8 @@
     "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
+    "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
+    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Run",
     "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
     "JUnit.nsu.chebotareva in Task_1_1_2.main.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -131,10 +152,10 @@
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "#2 on Task__1__1__2",
+    "git-widget-placeholder": "Task__1__1__3",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
-    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_2/src/main/java/nsu_chebotareva/Main.java",
+    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -153,7 +174,20 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Expression">
+    <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
+      <module name="Task_1_1_3.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nsu.chebotareva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
       <module name="Task_1_1_2.main" />
@@ -166,30 +200,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="MainTest.emptyDeck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.MainTest.emptyDeck&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="MainTest.endOfRound4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -215,10 +225,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MainTest.game" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'nsu.chebotareva' (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_2" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -228,7 +238,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.MainTest.game&quot;" />
+            <option value="&quot;nsu.chebotareva.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -265,11 +275,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Expression" />
+        <item itemvalue="Gradle.Tests in 'nsu.chebotareva' (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
         <item itemvalue="Gradle.MainTest.endOfRound4" />
-        <item itemvalue="Gradle.MainTest.emptyDeck" />
-        <item itemvalue="Gradle.MainTest.game" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727147187569</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="all without parsing">
+      <option name="closed" value="true" />
+      <created>1727665711319</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727665711319</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,7 +471,8 @@
     <MESSAGE value="fixing build" />
     <MESSAGE value="adding tests" />
     <MESSAGE value="adding tests and fixing style" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding tests and fixing style" />
+    <MESSAGE value="all without parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="all without parsing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
@@ -468,5 +487,6 @@
     <SUITE FILE_PATH="coverage/OOP$nsu_chebotareva_in_Task_1_1_2_main.ic" NAME="nsu.chebotareva in Task_1_1_2.main Coverage Results" MODIFIED="1727146257846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu.chebotareva.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1727665518017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

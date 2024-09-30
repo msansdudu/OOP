@@ -34,12 +34,20 @@ public abstract class Expression {
      */
     abstract int eval(String expr);
 
+    public static Expression create(String str) {
+        Parser pars = new Parser(str);
+        return pars.parse();
+    }
+
     /**
      * Main-метод.
      *
      * @param args -- аргументы основного метода.
      */
     public static void main(String[] args) {
-
+        Expression e = create("(((2 + x) / 3) * (Ax - (-4 * y)))");
+        e.print();
+        int res = e.eval("x = 4; Ax = 2; y = 1");
+        System.out.println(res);
     }
 }
