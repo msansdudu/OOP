@@ -59,16 +59,23 @@ public class Parser {
             right = term();
         }
 
-        e = switch (op) {
-            case ('+') -> new Add(left, right);
-            case ('-') -> new Sub(left, right);
-            case ('*') -> new Mul(left, right);
-            case ('/') -> new Div(left, right);
-            default -> {
+        switch (op) {
+            case ('+'):
+                e = new Add(left, right);
+                break;
+            case ('-'):
+                e = new Sub(left, right);
+                break;
+            case ('*'):
+                e = new Mul(left, right);
+                break;
+            case ('/'):
+                e = new Div(left, right);
+                break;
+            default:
                 System.out.println("Error: couldn't identify operation " + op + "!");
-                yield null;
-            }
-        };
+                e = null;
+        }
         return e;
     }
 

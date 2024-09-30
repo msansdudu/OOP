@@ -49,5 +49,7 @@ public abstract class Expression {
         e.print();
         int res = e.eval("x = 4; Ax = 2; y = 1");
         System.out.println(res);
+        Expression de = e.derivative("x");
+        de.print();
     }
 }
