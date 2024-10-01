@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="parser test">
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="parsing from files and inputstream">
+      <change afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ExpressionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/Printing.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +158,7 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ParserTest.parseFromInput">
+  <component name="RunManager" selected="Gradle.ParserTest">
     <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
       <module name="Task_1_1_3.main" />
@@ -172,18 +172,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
-      <module name="Task_1_1_2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nsu.chebotareva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nsu.chebotareva.ParserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="ParserTest.parse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -259,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ParserTest.parseFromInput" />
+        <item itemvalue="Gradle.ParserTest" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva' (1)" />
+        <item itemvalue="Gradle.ParserTest.parseFromInput" />
         <item itemvalue="Gradle.ParserTest.parse" />
         <item itemvalue="Application.Expression" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -444,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727681380242</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="parsing from files and inputstream">
+      <option name="closed" value="true" />
+      <created>1727753169042</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1727753169042</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +493,8 @@
     <MESSAGE value="all without parsing" />
     <MESSAGE value="adding parser" />
     <MESSAGE value="parser test" />
-    <option name="LAST_COMMIT_MESSAGE" value="parser test" />
+    <MESSAGE value="parsing from files and inputstream" />
+    <option name="LAST_COMMIT_MESSAGE" value="parsing from files and inputstream" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
@@ -489,6 +509,6 @@
     <SUITE FILE_PATH="coverage/OOP$nsu_chebotareva_in_Task_1_1_2_main.ic" NAME="nsu.chebotareva in Task_1_1_2.main Coverage Results" MODIFIED="1727146257846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu.chebotareva.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1727752867063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1727753372003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

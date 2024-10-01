@@ -39,7 +39,8 @@ class ExpressionTest {
 
     @Test
     void realPrint2() {
-        Expression e = new Div(new Add(new Number(3), new Variable("x")), new Sub(new Variable("y"), new Variable("x")));
+        Expression e = new Div(new Add(new Number(3), new Variable("x")),
+                new Sub(new Variable("y"), new Variable("x")));
         String res = e.realPrint();
         assert Objects.equals(res, "((3 + x) / (y - x))");
     }

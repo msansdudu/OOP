@@ -23,6 +23,7 @@ public class Div extends Expression {
         String e = "(" + left.realPrint() + " / " + right.realPrint() + ")";
         return e;
     }
+
     @Override
     public Expression derivative(String a) {
         Expression derLeft = new Mul(left.derivative(a), right);

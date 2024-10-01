@@ -38,14 +38,34 @@ public abstract class Expression {
      */
     abstract int eval(String expr);
 
-    public static Expression create(String file){
+    /**
+     * Создает выражение, читая файл.
+     *
+     * @param file -- ссылка на файл.
+     * @return -- возвращает выражение.
+     */
+    public static Expression create(String file) {
         return realCreate(file, Boolean.TRUE, null);
     }
 
-    public static Expression create(Scanner sc){
+    /**
+     * Создает выражение, читая консоль.
+     *
+     * @param sc -- ссылка на сканер.
+     * @return -- возвращает выражение.
+     */
+    public static Expression create(Scanner sc) {
         return realCreate("", Boolean.FALSE, sc);
     }
 
+    /**
+     * Создает выражение.
+     *
+     * @param file -- ссылка на файл.
+     * @param isFile -- мы читаем из файла?
+     * @param sc -- ссылка на сканер.
+     * @return -- возвращает выражение.
+     */
     public static Expression realCreate(String file, Boolean isFile, Scanner sc) {
         if (isFile) {
             try {
