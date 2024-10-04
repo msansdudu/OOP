@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="fixing style">
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="division by zero and double eval">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Add.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Mul.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Mul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Number.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Sub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ExpressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ExpressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +161,7 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Expression">
+  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva' (1)">
     <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
       <module name="Task_1_1_3.main" />
@@ -276,10 +273,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ParserTest" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva' (1)" />
-        <item itemvalue="Gradle.ParserTest.parseFromInput" />
         <item itemvalue="Gradle.ParserTest.parse" />
+        <item itemvalue="Gradle.ParserTest" />
+        <item itemvalue="Gradle.ParserTest.parseFromInput" />
         <item itemvalue="Application.Expression" />
       </list>
     </recent_temporary>
@@ -477,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727753642590</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="division by zero and double eval">
+      <option name="closed" value="true" />
+      <created>1728027963335</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1728027963335</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -508,7 +513,8 @@
     <MESSAGE value="parser test" />
     <MESSAGE value="parsing from files and inputstream" />
     <MESSAGE value="fixing style" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing style" />
+    <MESSAGE value="division by zero and double eval" />
+    <option name="LAST_COMMIT_MESSAGE" value="division by zero and double eval" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
@@ -523,6 +529,6 @@
     <SUITE FILE_PATH="coverage/OOP$nsu_chebotareva_in_Task_1_1_2_main.ic" NAME="nsu.chebotareva in Task_1_1_2.main Coverage Results" MODIFIED="1727146257846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu.chebotareva.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1727753372003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1728031173689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
