@@ -34,12 +34,12 @@ public class Variable extends Expression {
     }
 
     @Override
-    public int eval(String expr) {
+    public double eval(String expr) {
         String[] den = expr.split("; ");
         for (String a : den) {
             String[] nums = a.split(" = ");
             if (Objects.equals(nums[0], var)) {
-                return Integer.parseInt(nums[1]);
+                return (double) Integer.parseInt(nums[1]);
             }
         }
         return 0;

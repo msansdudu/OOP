@@ -33,7 +33,7 @@ public class Mul extends Expression {
     }
 
     @Override
-    public int eval(String expr) {
-        return left.eval(expr) * right.eval(expr);
+    public double eval(String expr) {
+        return (double) left.eval(expr) * right.eval(expr);
     }
 }

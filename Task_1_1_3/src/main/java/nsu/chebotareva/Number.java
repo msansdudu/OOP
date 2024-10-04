@@ -27,7 +27,7 @@ public class Number extends Expression {
     }
 
     @Override
-    public int eval(String expr) {
-        return num;
+    public double eval(String expr) {
+        return (double) num;
     }
 }

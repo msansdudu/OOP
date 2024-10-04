@@ -36,7 +36,7 @@ public abstract class Expression {
      * @param expr -- выражение, которое требуется вычислить.
      * @return -- полученное значение.
      */
-    abstract int eval(String expr);
+    abstract double eval(String expr);
 
     /**
      * Создает выражение, читая файл.

@@ -35,7 +35,10 @@ public class Div extends Expression {
     }
 
     @Override
-    public int eval(String expr) {
-        return left.eval(expr) / right.eval(expr);
+    public double eval(String expr) {
+        if (right.eval(expr) == 0) {
+            throw new ArithmeticException("Division by zero!");
+        }
+        return (double) left.eval(expr) / (double) right.eval(expr);
     }
 }
