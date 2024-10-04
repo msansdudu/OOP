@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":9};
+var data = {"i0":9,"i1":9,"i2":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,39 +180,23 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="Expression.html" title="class in nsu.chebotareva">Expression</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.lang.String)">create</a></span>&#8203;(java.lang.String&nbsp;file)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.io.InputStream)">create</a></span>&#8203;(java.io.InputStream&nbsp;inputStream)</code></th>
 <td class="colLast">
-<div class="block">Создает выражение, читая файл.</div>
+<div class="block">Создает выражение.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static <a href="Expression.html" title="class in nsu.chebotareva">Expression</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#create(java.util.Scanner)">create</a></span>&#8203;(java.util.Scanner&nbsp;sc)</code></th>
-<td class="colLast">
-<div class="block">Создает выражение, читая консоль.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#main(java.lang.String%5B%5D)">main</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
 <td class="colLast">
 <div class="block">Main-метод.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#print()">print</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#print(java.io.OutputStream)">print</a></span>&#8203;(java.io.OutputStream&nbsp;outputStream)</code></th>
 <td class="colLast">
 <div class="block">Печать выражений в обозначенном виде.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static <a href="Expression.html" title="class in nsu.chebotareva">Expression</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#realCreate(java.lang.String,java.lang.Boolean,java.util.Scanner)">realCreate</a></span>&#8203;(java.lang.String&nbsp;file,
-          java.lang.Boolean&nbsp;isFile,
-          java.util.Scanner&nbsp;sc)</code></th>
-<td class="colLast">
-<div class="block">Создает выражение.</div>
 </td>
 </tr>
 </table>
@@ -258,63 +242,32 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="print()">
+<a id="print(java.io.OutputStream)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>print</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;print()</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;print&#8203;(java.io.OutputStream&nbsp;outputStream)
+           throws java.io.IOException</pre>
 <div class="block">Печать выражений в обозначенном виде.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
 </li>
 </ul>
-<a id="create(java.lang.String)">
+<a id="create(java.io.InputStream)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Expression.html" title="class in nsu.chebotareva">Expression</a>&nbsp;create&#8203;(java.lang.String&nbsp;file)</pre>
-<div class="block">Создает выражение, читая файл.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - -- ссылка на файл.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- возвращает выражение.</dd>
-</dl>
-</li>
-</ul>
-<a id="create(java.util.Scanner)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>create</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Expression.html" title="class in nsu.chebotareva">Expression</a>&nbsp;create&#8203;(java.util.Scanner&nbsp;sc)</pre>
-<div class="block">Создает выражение, читая консоль.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>sc</code> - -- ссылка на сканер.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- возвращает выражение.</dd>
-</dl>
-</li>
-</ul>
-<a id="realCreate(java.lang.String,java.lang.Boolean,java.util.Scanner)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>realCreate</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Expression.html" title="class in nsu.chebotareva">Expression</a>&nbsp;realCreate&#8203;(java.lang.String&nbsp;file,
-                                    java.lang.Boolean&nbsp;isFile,
-                                    java.util.Scanner&nbsp;sc)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="Expression.html" title="class in nsu.chebotareva">Expression</a>&nbsp;create&#8203;(java.io.InputStream&nbsp;inputStream)</pre>
 <div class="block">Создает выражение.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - -- ссылка на файл.</dd>
-<dd><code>isFile</code> - -- мы читаем из файла?</dd>
-<dd><code>sc</code> - -- ссылка на сканер.</dd>
+<dd><code>inputStream</code> - -- поток ввода.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>-- возвращает выражение.</dd>
 </dl>
