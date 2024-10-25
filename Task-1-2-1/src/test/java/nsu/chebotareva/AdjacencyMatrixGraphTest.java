@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AdjacencyMatrixGraphTest {
     @Test
-    void test() {
+    void test() throws Exception {
         Graph g = new AdjacencyMatrixGraph();
         g.addVertex();
         g.addVertex();
@@ -28,8 +28,23 @@ class AdjacencyMatrixGraphTest {
         g.removeEdge(new Edge(3, 4));
         mustBe.remove((Integer) 4);
         assertEquals(mustBe, g.neighbors(3));
-        assertEquals(1, g.removeVertex(2));
-        assertEquals(1, g.removeEdge(new Edge(2, 3)));
+
+        boolean exceptionThrown = false;
+        try {
+            g.removeVertex(2);
+        } catch (Exception e) {
+            exceptionThrown = true;
+        }
+        assertTrue(exceptionThrown);
+
+        exceptionThrown = false;
+        try {
+            g.removeEdge(new Edge(2, 3));
+        } catch (Exception e) {
+            exceptionThrown = true;
+        }
+        assertTrue(exceptionThrown);
+
         g.print();
         g.removeVertex(4);
         g.removeVertex(3);
@@ -38,7 +53,7 @@ class AdjacencyMatrixGraphTest {
     }
 
     @Test
-    void readAndEquals() {
+    void readAndEquals() throws Exception {
         AdjacencyMatrixGraph g = new AdjacencyMatrixGraph();
         String str = "1 0 1\n1 1 0\n0 0 1";
         InputStream stream = new ByteArrayInputStream(str.getBytes(StandardCharsets.UTF_8));
@@ -49,13 +64,13 @@ class AdjacencyMatrixGraphTest {
         g2.addVertex();
         g2.addEdge(new Edge(2, 1));
         g2.addEdge(new Edge(1, 3));
-        assertEquals(true, g2.isEqual(g));
+        assertTrue(g2.isEqual(g));
         g2.removeVertex(2);
-        assertEquals(false, g.isEqual(g2));
+        assertFalse(g.isEqual(g2));
     }
 
     @Test
-    void topSort() {
+    void topSort() throws Exception {
         AdjacencyMatrixGraph graph = new AdjacencyMatrixGraph();
         for (int i = 0; i < 6; i++) {
             graph.addVertex();

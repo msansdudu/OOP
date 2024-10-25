@@ -2,22 +2,39 @@ package nsu.chebotareva;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Objects;
 
-/**
- * Интерфейс графа.
- */
-public interface Graph {
+abstract public class GraphCl implements Graph{
+    public boolean isEqual(Graph g) {
+        if (this.getVertexAmount() != g.getVertexAmount()) {
+            return false;
+        }
+        if (this.getVertexAmount() == 0) {
+            return true;
+        }
+        for (int i = 1; i <= this.getVertexAmount(); i++) {
+            if (!Objects.equals(this.neighbors(i), g.neighbors(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    int hashcode() {
+        return 1;
+    }
+
     /**
      * Возвращает количество вершин.
      *
      * @return -- количество вершин.
      */
-    int getVertexAmount();
+    abstract public int getVertexAmount();
 
     /**
      * Добавляет вершину "в конец".
      */
-    void addVertex();
+    abstract public void addVertex();
 
     /**
      * Удаляет вершину v.
@@ -25,7 +42,7 @@ public interface Graph {
      * @param v -- вершина.
      * @throws Exception -- при неудаче.
      */
-    void removeVertex(int v) throws Exception;
+    abstract public void removeVertex(int v) throws Exception;
 
     /**
      * Добавить ребро.
@@ -33,7 +50,7 @@ public interface Graph {
      * @param e -- ребро с параметрами from-to.
      * @throws Exception -- при неудаче.
      */
-    void addEdge(Edge e) throws Exception;
+    abstract public void addEdge(Edge e) throws Exception;
 
     /**
      * Удалить ребро.
@@ -41,7 +58,7 @@ public interface Graph {
      * @param e -- ребро с параметрами from-to.
      * @throws Exception -- при неудаче.
      */
-    void removeEdge(Edge e) throws Exception;
+    abstract public void removeEdge(Edge e) throws Exception;
 
     /**
      * Получить список соседей вершины v.
@@ -49,7 +66,7 @@ public interface Graph {
      * @param v -- вершина.
      * @return -- список соседей.
      */
-    ArrayList<Integer> neighbors(int v);
+    abstract public ArrayList<Integer> neighbors(int v);
 
     /**
      * Считать граф.
@@ -57,17 +74,17 @@ public interface Graph {
      * @param input -- входной поток.
      * @param regex -- разделитель.
      */
-    void read(InputStream input, String regex);
+    abstract public void read(InputStream input, String regex);
 
     /**
      * Возращает топологически отсортированные вершины.
      *
      * @return -- список либо null при ошибке.
      */
-    ArrayList<Integer> topologicalSort();
+    abstract public ArrayList<Integer> topologicalSort();
 
     /**
      * Вывести граф.
      */
-    void print();
+    abstract public void print();
 }

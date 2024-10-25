@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AdjacencyListGraphTest {
     @Test
-    void test() {
+    void test() throws Exception {
         Graph g = new AdjacencyListGraph();
         g.addVertex();
         g.addVertex();
@@ -34,8 +34,23 @@ class AdjacencyListGraphTest {
         mustBe.add(4);
         mustBe.add(5);
         assertEquals(mustBe, g.neighbors(3));
-        assertEquals(1, g.removeVertex(7));
-        assertEquals(1, g.removeEdge(new Edge(3, 1)));
+
+        boolean exceptionThrown = false;
+        try {
+            g.removeVertex(7);
+        } catch (Exception e) {
+            exceptionThrown = true;
+        }
+        assertTrue(exceptionThrown);
+
+        exceptionThrown = false;
+        try {
+            g.removeEdge(new Edge(3, 1));
+        } catch (Exception e) {
+            exceptionThrown = true;
+        }
+        assertTrue(exceptionThrown);
+
         g.removeEdge(new Edge(4, 3));
         mustBe.remove((Integer) 4);
         assertEquals(mustBe, g.neighbors(3));
@@ -44,7 +59,7 @@ class AdjacencyListGraphTest {
     }
 
     @Test
-    void readAndEqual() {
+    void readAndEqual() throws Exception {
         String str = "3\n2\n1, 3\n2";
         InputStream stream = new ByteArrayInputStream(str.getBytes(StandardCharsets.UTF_8));
         AdjacencyListGraph g1 = new AdjacencyListGraph();
@@ -56,11 +71,13 @@ class AdjacencyListGraphTest {
         g2.addVertex();
         g2.addEdge(new Edge(1, 2));
         g2.addEdge(new Edge(2, 3));
-        assertEquals(true, g1.isEqual(g2));
+        g1.print();
+        g2.print();
+        assertTrue(g1.isEqual(g2));
     }
 
     @Test
-    void topSort() {
+    void topSort() throws Exception {
         AdjacencyListGraph graph = new AdjacencyListGraph();
         for (int i = 0; i < 6; i++) {
             graph.addVertex();

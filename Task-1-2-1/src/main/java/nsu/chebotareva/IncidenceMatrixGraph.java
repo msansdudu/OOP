@@ -2,10 +2,9 @@ package nsu.chebotareva;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.Scanner;
 
-public class IncidenceMatrixGraph implements Graph {
+public class IncidenceMatrixGraph extends GraphCl {
     private int[][] matrix;
     private int vertexAmount = 0;
     private int edgeAmount = 0;
@@ -15,16 +14,6 @@ public class IncidenceMatrixGraph implements Graph {
     @Override
     public int getVertexAmount() {
         return vertexAmount;
-    }
-
-    @Override
-    public ArrayList<Integer> getListOfVertex() {
-        return listOfVertex;
-    }
-
-    @Override
-    public void setListOfVertex(ArrayList<Integer> listV) {
-        listOfVertex = listV;
     }
 
     @Override
@@ -48,9 +37,9 @@ public class IncidenceMatrixGraph implements Graph {
     }
 
     @Override
-    public int removeVertex(int u) {
+    public void removeVertex(int u) throws Exception {
         if (!listOfVertex.contains(u)) {
-            return 1;
+            throw new Exception("This vertices doesn't exist!");
         }
         int v = listOfVertex.indexOf(u);
         int[][] newMatrix = new int[vertexAmount - 1][edgeAmount];
@@ -64,13 +53,12 @@ public class IncidenceMatrixGraph implements Graph {
         vertexAmount--;
         matrix = newMatrix;
         listOfVertex.remove((Integer) u);
-        return 0;
     }
 
     @Override
-    public int addEdge(Edge e) {
+    public void addEdge(Edge e) throws Exception {
         if (!listOfVertex.contains(e.getFrom()) || !listOfVertex.contains(e.getTo())) {
-            return 1;
+            throw new Exception("This vertices doesn't exist!");
         }
         int[][] newMatrix = new int[vertexAmount][edgeAmount + 1];
         for (int i = 0; i < vertexAmount; i++) {
@@ -88,13 +76,12 @@ public class IncidenceMatrixGraph implements Graph {
             u = listOfEdges.get(edgeAmount - 2) + 1;
         }
         listOfEdges.add(u);
-        return 0;
     }
 
     @Override
-    public int removeEdge(Edge e) {
+    public void removeEdge(Edge e) throws Exception {
         if (!listOfVertex.contains(e.getFrom()) || !listOfVertex.contains(e.getTo())) {
-            return 1;
+            throw new Exception("This vertices doesn't exist!");
         }
         int[][] newMatrix = new int[vertexAmount][edgeAmount - 1];
         int num = -1;
@@ -104,7 +91,7 @@ public class IncidenceMatrixGraph implements Graph {
             }
         }
         if (num == -1) {
-            return 1;
+            throw new Exception("This edge doesn't exist!");
         }
         for (int i = 0; i < vertexAmount; i++) {
             for (int j = 0; j < edgeAmount; j++) {
@@ -118,7 +105,6 @@ public class IncidenceMatrixGraph implements Graph {
         edgeAmount--;
         matrix = newMatrix;
         listOfEdges.remove(num);
-        return 0;
     }
 
     @Override
@@ -225,25 +211,5 @@ public class IncidenceMatrixGraph implements Graph {
             }
             System.out.println();
         }
-    }
-
-    @Override
-    public Boolean isEqual(Graph g) {
-        if (vertexAmount != g.getVertexAmount()) {
-            return false;
-        }
-        if (vertexAmount == 0) {
-            return true;
-        }
-        ArrayList<Integer> listV = g.getListOfVertex();
-        g.setListOfVertex(listOfVertex);
-        for (int i = 1; i <= vertexAmount; i++) {
-            if (!Objects.equals(this.neighbors(i), g.neighbors(i))) {
-                g.setListOfVertex(listV);
-                return false;
-            }
-        }
-        g.setListOfVertex(listV);
-        return true;
     }
 }

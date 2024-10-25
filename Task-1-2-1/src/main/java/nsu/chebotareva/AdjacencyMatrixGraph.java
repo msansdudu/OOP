@@ -3,10 +3,9 @@ package nsu.chebotareva;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Objects;
 import java.util.Scanner;
 
-public class AdjacencyMatrixGraph implements Graph {
+public class AdjacencyMatrixGraph extends GraphCl {
     private Boolean[][] matrix;
     public ArrayList<Integer> listOfVertex = new ArrayList<>();
     private int vertexAmount = 0;
@@ -14,16 +13,6 @@ public class AdjacencyMatrixGraph implements Graph {
     @Override
     public int getVertexAmount() {
         return vertexAmount;
-    }
-
-    @Override
-    public ArrayList<Integer> getListOfVertex() {
-        return listOfVertex;
-    }
-
-    @Override
-    public void setListOfVertex(ArrayList<Integer> listV) {
-        listOfVertex = listV;
     }
 
     @Override
@@ -48,9 +37,9 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public int removeVertex(int u) {
+    public void removeVertex(int u) throws Exception {
         if (!listOfVertex.contains(u)) {
-            return 1;
+            throw new Exception("This vertices doesn't exist!");
         }
         int v = listOfVertex.indexOf(u);
         Boolean[][] newMatrix = new Boolean[vertexAmount - 1][vertexAmount - 1];
@@ -74,29 +63,26 @@ public class AdjacencyMatrixGraph implements Graph {
         vertexAmount--;
         matrix = newMatrix;
         listOfVertex.remove((Integer) u);
-        return 0;
     }
 
     @Override
-    public int addEdge(Edge e) {
+    public void addEdge(Edge e) throws Exception {
         if (!listOfVertex.contains(e.getFrom()) || !listOfVertex.contains(e.getTo())) {
-            return 1;
+            throw new Exception("This vertices doesn't exist!");
         }
         matrix[listOfVertex.indexOf(e.getFrom())][listOfVertex.indexOf(e.getTo())] = true;
-        return 0;
     }
 
     @Override
-    public int removeEdge(Edge e) {
+    public void removeEdge(Edge e) throws Exception {
         if (!listOfVertex.contains(e.getFrom()) || !listOfVertex.contains(e.getTo()) ||
                 e.getFrom() == e.getTo()) {
-            return 1;
+            throw new Exception("This vertices doesn't exist!");
         }
         if (!matrix[listOfVertex.indexOf(e.getFrom())][listOfVertex.indexOf(e.getTo())]) {
-            return 1;
+            throw new Exception("This edge doesn't exist!");
         }
         matrix[listOfVertex.indexOf(e.getFrom())][listOfVertex.indexOf(e.getTo())] = false;
-        return 0;
     }
 
     @Override
@@ -158,7 +144,8 @@ public class AdjacencyMatrixGraph implements Graph {
         return sortedList;
     }
 
-    private boolean dfsTopologicalSort(int v, boolean[] visited, boolean[] inProcess, ArrayList<Integer> sortedList) {
+    private boolean dfsTopologicalSort(int v, boolean[] visited, boolean[] inProcess,
+                                       ArrayList<Integer> sortedList) {
         visited[v] = true;
         inProcess[v] = true;
 
@@ -195,29 +182,10 @@ public class AdjacencyMatrixGraph implements Graph {
             System.out.println();
             System.out.printf("%3d |", listOfVertex.get(i));
             for (int j = 0; j < vertexAmount; j++) {
-                System.out.printf("%3d %s", matrix[i][j] ? 1 : 0, j == vertexAmount - 1 ? "" : "|");
+                System.out.printf("%3d %s", matrix[i][j] ? 1 : 0,
+                        j == vertexAmount - 1 ? "" : "|");
             }
             System.out.println();
         }
-    }
-
-    @Override
-    public Boolean isEqual(Graph g) {
-        if (vertexAmount != g.getVertexAmount()) {
-            return false;
-        }
-        if (vertexAmount == 0) {
-            return true;
-        }
-        ArrayList<Integer> listV = g.getListOfVertex();
-        g.setListOfVertex(listOfVertex);
-        for (int i = 1; i <= vertexAmount; i++) {
-            if (!Objects.equals(this.neighbors(i), g.neighbors(i))) {
-                g.setListOfVertex(listV);
-                return false;
-            }
-        }
-        g.setListOfVertex(listV);
-        return true;
     }
 }

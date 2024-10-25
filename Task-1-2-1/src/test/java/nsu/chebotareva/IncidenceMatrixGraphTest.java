@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class IncidenceMatrixGraphTest {
 
     @Test
-    void test() {
+    void test() throws Exception {
         Graph g = new IncidenceMatrixGraph();
         g.addVertex();
         g.addVertex();
@@ -25,24 +25,39 @@ class IncidenceMatrixGraphTest {
         ArrayList<Integer> mustBe = new ArrayList<>();
         mustBe.add(2);
         assertEquals(mustBe, g.neighbors(1));
-        assertEquals(1, g.removeEdge(new Edge(4, 2)));
+
+        boolean exceptionThrown = false;
+        try {
+            g.removeEdge(new Edge(4, 2));
+        } catch (Exception e) {
+            exceptionThrown = true;
+        }
+        assertTrue(exceptionThrown);
+
         g.removeEdge(new Edge(1, 2));
         mustBe.remove((Integer) 2);
         assertEquals(mustBe, g.neighbors(1));
         g.removeVertex(1);
-        assertEquals(1, g.removeVertex(1));
+        exceptionThrown = false;
+        try {
+            g.removeVertex(1);
+        } catch (Exception e) {
+            exceptionThrown = true;
+        }
+        assertTrue(exceptionThrown);
+
         g.removeVertex(2);
         assertEquals(1, g.getVertexAmount());
     }
 
     @Test
-    void readAndEqual() {
-        Graph g1 = new IncidenceMatrixGraph();
+    void readAndEqual() throws Exception {
+        IncidenceMatrixGraph g1 = new IncidenceMatrixGraph();
         String str = "3\n0 -1\n1 1\n-1 0";
         InputStream stream = new ByteArrayInputStream(str.getBytes(StandardCharsets.UTF_8));
         g1.read(stream, " ");
         g1.print();
-        Graph g = new IncidenceMatrixGraph();
+        IncidenceMatrixGraph g = new IncidenceMatrixGraph();
         g.addVertex();
         g.addVertex();
         g.addVertex();
@@ -50,13 +65,13 @@ class IncidenceMatrixGraphTest {
         g.addEdge(new Edge(3, 2));
         g.removeEdge(new Edge(1, 2));
         g.addEdge(new Edge(1, 2));
-        assertEquals(true, g.isEqual(g1));
+        assertTrue(g.isEqual(g1));
         g.removeVertex(1);
-        assertEquals(false, g.isEqual(g1));
+        assertFalse(g.isEqual(g1));
     }
 
     @Test
-    void topSort() {
+    void topSort() throws Exception {
         IncidenceMatrixGraph graph = new IncidenceMatrixGraph();
         for (int i = 0; i < 6; i++) {
             graph.addVertex();
