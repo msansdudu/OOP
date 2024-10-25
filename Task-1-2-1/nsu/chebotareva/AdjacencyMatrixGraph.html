@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,7 +122,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li><a href="GraphCl.html" title="class in nsu.chebotareva">nsu.chebotareva.GraphCl</a></li>
+<li>
+<ul class="inheritance">
 <li>nsu.chebotareva.AdjacencyMatrixGraph</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -135,8 +140,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">AdjacencyMatrixGraph</span>
-extends java.lang.Object
-implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></pre>
+extends <a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></pre>
 </li>
 </ul>
 </div>
@@ -202,7 +206,7 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>int</code></td>
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addEdge(nsu.chebotareva.Edge)">addEdge</a></span>&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Добавить ребро.</div>
@@ -216,41 +220,27 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getListOfVertex()">getListOfVertex</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Возвращает список вершин.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVertexAmount()">getVertexAmount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Возвращает количество вершин.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>java.lang.Boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEqual(nsu.chebotareva.Graph)">isEqual</a></span>&#8203;(<a href="Graph.html" title="interface in nsu.chebotareva">Graph</a>&nbsp;g)</code></th>
-<td class="colLast">
-<div class="block">Сравнивает два графа.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#neighbors(int)">neighbors</a></span>&#8203;(int&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Получить список соседей вершины v.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#print()">print</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Вывести граф.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(java.io.InputStream,java.lang.String)">read</a></span>&#8203;(java.io.InputStream&nbsp;input,
     java.lang.String&nbsp;regex)</code></th>
@@ -258,28 +248,21 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <div class="block">Считать граф.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>int</code></td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeEdge(nsu.chebotareva.Edge)">removeEdge</a></span>&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Удалить ребро.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>int</code></td>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeVertex(int)">removeVertex</a></span>&#8203;(int&nbsp;u)</code></th>
 <td class="colLast">
 <div class="block">Удаляет вершину v.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setListOfVertex(java.util.ArrayList)">setListOfVertex</a></span>&#8203;(java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;listV)</code></th>
-<td class="colLast">
-<div class="block">Устанавливает список вершин.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#topologicalSort()">topologicalSort</a></span>()</code></th>
 <td class="colLast">
@@ -287,6 +270,13 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.nsu.chebotareva.GraphCl">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;nsu.chebotareva.<a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></h3>
+<code><a href="GraphCl.html#isEqual(nsu.chebotareva.Graph)">isEqual</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -355,45 +345,15 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <li class="blockList">
 <h4>getVertexAmount</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getVertexAmount()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#getVertexAmount()">Graph</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#getVertexAmount()">GraphCl</a></code></span></div>
 <div class="block">Возвращает количество вершин.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#getVertexAmount()">getVertexAmount</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#getVertexAmount()">getVertexAmount</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>-- количество вершин.</dd>
-</dl>
-</li>
-</ul>
-<a id="getListOfVertex()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getListOfVertex</h4>
-<pre class="methodSignature">public&nbsp;java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;getListOfVertex()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#getListOfVertex()">Graph</a></code></span></div>
-<div class="block">Возвращает список вершин.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Graph.html#getListOfVertex()">getListOfVertex</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- список вершин.</dd>
-</dl>
-</li>
-</ul>
-<a id="setListOfVertex(java.util.ArrayList)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setListOfVertex</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setListOfVertex&#8203;(java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;listV)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#setListOfVertex(java.util.ArrayList)">Graph</a></code></span></div>
-<div class="block">Устанавливает список вершин.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Graph.html#setListOfVertex(java.util.ArrayList)">setListOfVertex</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -404,11 +364,13 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <li class="blockList">
 <h4>addVertex</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;addVertex()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#addVertex()">Graph</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#addVertex()">GraphCl</a></code></span></div>
 <div class="block">Добавляет вершину "в конец".</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#addVertex()">addVertex</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#addVertex()">addVertex</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -418,16 +380,19 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <ul class="blockList">
 <li class="blockList">
 <h4>removeVertex</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;removeVertex&#8203;(int&nbsp;u)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#removeVertex(int)">Graph</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;removeVertex&#8203;(int&nbsp;u)
+                  throws java.lang.Exception</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#removeVertex(int)">GraphCl</a></code></span></div>
 <div class="block">Удаляет вершину v.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#removeVertex(int)">removeVertex</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#removeVertex(int)">removeVertex</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>u</code> - -- вершина.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- удалось ли удалить вершину (0 -- успешно, 1 -- нет).</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Exception</code> - -- при неудаче.</dd>
 </dl>
 </li>
 </ul>
@@ -437,16 +402,19 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <ul class="blockList">
 <li class="blockList">
 <h4>addEdge</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;addEdge&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#addEdge(nsu.chebotareva.Edge)">Graph</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;addEdge&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)
+             throws java.lang.Exception</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#addEdge(nsu.chebotareva.Edge)">GraphCl</a></code></span></div>
 <div class="block">Добавить ребро.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#addEdge(nsu.chebotareva.Edge)">addEdge</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#addEdge(nsu.chebotareva.Edge)">addEdge</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - -- ребро с параметрами from-to.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- удалось ли добавить вершину (0 -- успешно, 1 -- нет).</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Exception</code> - -- при неудаче.</dd>
 </dl>
 </li>
 </ul>
@@ -456,16 +424,19 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <ul class="blockList">
 <li class="blockList">
 <h4>removeEdge</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;removeEdge&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#removeEdge(nsu.chebotareva.Edge)">Graph</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;removeEdge&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)
+                throws java.lang.Exception</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#removeEdge(nsu.chebotareva.Edge)">GraphCl</a></code></span></div>
 <div class="block">Удалить ребро.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#removeEdge(nsu.chebotareva.Edge)">removeEdge</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#removeEdge(nsu.chebotareva.Edge)">removeEdge</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>e</code> - -- ребро с параметрами from-to.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- удалось ли удалить ребро (0 -- успешно, 1 -- нет).</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Exception</code> - -- при неудаче.</dd>
 </dl>
 </li>
 </ul>
@@ -476,11 +447,13 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <li class="blockList">
 <h4>neighbors</h4>
 <pre class="methodSignature">public&nbsp;java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;neighbors&#8203;(int&nbsp;v)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#neighbors(int)">Graph</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#neighbors(int)">GraphCl</a></code></span></div>
 <div class="block">Получить список соседей вершины v.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#neighbors(int)">neighbors</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#neighbors(int)">neighbors</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>v</code> - -- вершина.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -496,11 +469,13 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <h4>read</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;read&#8203;(java.io.InputStream&nbsp;input,
                  java.lang.String&nbsp;regex)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#read(java.io.InputStream,java.lang.String)">Graph</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#read(java.io.InputStream,java.lang.String)">GraphCl</a></code></span></div>
 <div class="block">Считать граф.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#read(java.io.InputStream,java.lang.String)">read</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#read(java.io.InputStream,java.lang.String)">read</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - -- входной поток.</dd>
 <dd><code>regex</code> - -- разделитель.</dd>
@@ -514,11 +489,13 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <li class="blockList">
 <h4>topologicalSort</h4>
 <pre class="methodSignature">public&nbsp;java.util.ArrayList&lt;java.lang.Integer&gt;&nbsp;topologicalSort()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#topologicalSort()">Graph</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#topologicalSort()">GraphCl</a></code></span></div>
 <div class="block">Возращает топологически отсортированные вершины.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#topologicalSort()">topologicalSort</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="GraphCl.html#topologicalSort()">topologicalSort</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>-- список либо null при ошибке.</dd>
 </dl>
@@ -527,34 +504,17 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <a id="print()">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>print</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;print()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#print()">Graph</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="GraphCl.html#print()">GraphCl</a></code></span></div>
 <div class="block">Вывести граф.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Graph.html#print()">print</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="isEqual(nsu.chebotareva.Graph)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>isEqual</h4>
-<pre class="methodSignature">public&nbsp;java.lang.Boolean&nbsp;isEqual&#8203;(<a href="Graph.html" title="interface in nsu.chebotareva">Graph</a>&nbsp;g)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Graph.html#isEqual(nsu.chebotareva.Graph)">Graph</a></code></span></div>
-<div class="block">Сравнивает два графа.</div>
-<dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Graph.html#isEqual(nsu.chebotareva.Graph)">isEqual</a></code>&nbsp;in interface&nbsp;<code><a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>g</code> - -- граф, с которым сравниваем.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>-- true при равенсте, false при неравенстве.</dd>
+<dd><code><a href="GraphCl.html#print()">print</a></code>&nbsp;in class&nbsp;<code><a href="GraphCl.html" title="class in nsu.chebotareva">GraphCl</a></code></dd>
 </dl>
 </li>
 </ul>
