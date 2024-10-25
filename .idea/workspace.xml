@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="division by zero and double eval">
-      <change afterPath="$PROJECT_DIR$/Task-1-2-1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task-1-2-1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task-1-2-1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task-1-2-1/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="vertex, edges, printing and some reading">
+      <change afterPath="$PROJECT_DIR$/Task-1-2-1/src/test/java/nsu/chebotareva/AdjacencyListGraphTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task-1-2-1/src/test/java/nsu/chebotareva/AdjacencyMatrixGraphTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task-1-2-1/src/test/java/nsu/chebotareva/IncidenceMatrixGraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/AdjacencyListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/AdjacencyMatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/AdjacencyMatrixGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/IncidenceMatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/IncidenceMatrixGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task-1-2-1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +79,12 @@
     &quot;assignee&quot;: &quot;msansdudu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:msansdudu/OOP.git",
-    "accountId": "971ff570-528c-4f60-afb8-cae1247a0bc8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:msansdudu/OOP.git&quot;,
+    &quot;accountId&quot;: &quot;971ff570-528c-4f60-afb8-cae1247a0bc8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -96,6 +100,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HeapSort.executor": "Coverage",
+    "Gradle.AdjacencyMatrixGraphTest.test.executor": "Run",
     "Gradle.Build Task_1_1_1.executor": "Run",
     "Gradle.Build Task_1_1_2.executor": "Run",
     "Gradle.CardsTest.testingNames.executor": "Run",
@@ -130,11 +135,13 @@
     "Gradle.PersonTest.printingNewDealerCards.executor": "Run",
     "Gradle.PersonTest.printingOpenedDealerCards.executor": "Run",
     "Gradle.PersonTest.printingPlayerCards.executor": "Run",
+    "Gradle.Task-1-2-1 [:nsu.chebotareva.Main.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
     "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
-    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
+    "Gradle.Tests in 'Task-1-2-1.test'.executor": "Coverage",
+    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Run",
     "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
     "JUnit.nsu.chebotareva in Task_1_1_2.main.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -142,7 +149,7 @@
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__1__2__1",
+    "git-widget-placeholder": "#6 on Task__1__2__1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
     "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task-1-2-1/src/main/java/chebotareva/Main.java",
@@ -164,10 +171,10 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva' (1)">
-    <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
-      <module name="Task_1_1_3.main" />
+  <component name="RunManager" selected="Gradle.Tests in 'Task-1-2-1.test'">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
+      <module name="Task-1-2-1.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nsu.chebotareva.*" />
@@ -178,10 +185,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AdjacencyMatrixGraphTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -191,7 +198,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.ParserTest&quot;" />
+            <option value="&quot;nsu.chebotareva.AdjacencyMatrixGraphTest.test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,10 +233,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ParserTest.parseFromInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'Task-1-2-1.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -238,8 +245,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.ParserTest.parseFromInput&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -276,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'Task-1-2-1.test'" />
+        <item itemvalue="Gradle.AdjacencyMatrixGraphTest.test" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva' (1)" />
         <item itemvalue="Gradle.ParserTest.parse" />
-        <item itemvalue="Gradle.ParserTest" />
-        <item itemvalue="Gradle.ParserTest.parseFromInput" />
-        <item itemvalue="Application.Expression" />
       </list>
     </recent_temporary>
   </component>
@@ -485,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728027963335</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="vertex, edges, printing and some reading">
+      <option name="closed" value="true" />
+      <created>1729230247652</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729230247652</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,18 +530,8 @@
     <MESSAGE value="parsing from files and inputstream" />
     <MESSAGE value="fixing style" />
     <MESSAGE value="division by zero and double eval" />
-    <option name="LAST_COMMIT_MESSAGE" value="division by zero and double eval" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Task-1-2-1/src/main/java/chebotareva/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="vertex, edges, printing and some reading" />
+    <option name="LAST_COMMIT_MESSAGE" value="vertex, edges, printing and some reading" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

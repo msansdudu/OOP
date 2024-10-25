@@ -2,14 +2,30 @@ package nsu.chebotareva;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class IncidenceMatrixGraph implements Graph {
     private int[][] matrix;
     private int vertexAmount = 0;
     private int edgeAmount = 0;
-    private final ArrayList<Integer> listOfVertex = new ArrayList<>();
+    public ArrayList<Integer> listOfVertex = new ArrayList<>();
     private final ArrayList<Integer> listOfEdges = new ArrayList<>();
+
+    @Override
+    public int getVertexAmount() {
+        return vertexAmount;
+    }
+
+    @Override
+    public ArrayList<Integer> getListOfVertex() {
+        return listOfVertex;
+    }
+
+    @Override
+    public void setListOfVertex(ArrayList<Integer> listV) {
+        listOfVertex = listV;
+    }
 
     @Override
     public void addVertex() {
@@ -26,7 +42,7 @@ public class IncidenceMatrixGraph implements Graph {
         if (vertexAmount == 1) {
             u = 1;
         } else {
-            u = listOfVertex.getLast() + 1;
+            u = listOfVertex.get(vertexAmount - 2) + 1;
         }
         listOfVertex.add(u);
     }
@@ -38,7 +54,7 @@ public class IncidenceMatrixGraph implements Graph {
         }
         int v = listOfVertex.indexOf(u);
         int[][] newMatrix = new int[vertexAmount - 1][edgeAmount];
-        for (int i = 0; i < vertexAmount; i++) {
+        for (int i = 0; i < vertexAmount - 1; i++) {
             if (i < v) {
                 System.arraycopy(matrix[i], 0, newMatrix[i], 0, edgeAmount);
             } else if (i > v) {
@@ -69,7 +85,7 @@ public class IncidenceMatrixGraph implements Graph {
         if (edgeAmount == 1) {
             u = 1;
         } else {
-            u = listOfEdges.getLast() + 1;
+            u = listOfEdges.get(edgeAmount - 2) + 1;
         }
         listOfEdges.add(u);
         return 0;
@@ -124,12 +140,70 @@ public class IncidenceMatrixGraph implements Graph {
     @Override
     public void read(InputStream input, String regex) {
         Scanner sc = new Scanner(input);
+        System.out.println("How many vertex do we have?");
+        vertexAmount = Integer.parseInt(sc.nextLine());
+        System.out.println("Print incidence matrix:");
+        String line = sc.nextLine();
+        String[] frst = line.split(regex);
+        edgeAmount = frst.length;
+        matrix = new int[vertexAmount][edgeAmount];
+        for (int i = 0; i < edgeAmount; i++) {
+            matrix[0][i] = Integer.parseInt(frst[i]);
+        }
+        listOfVertex.add(1);
+        listOfEdges.add(1);
+        for (int i = 1; i < vertexAmount; i++) {
+            for (int j = 0; j < edgeAmount; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+            listOfVertex.add(i + 1);
+            listOfEdges.add(i + 1);
+        }
         sc.close();
     }
 
     @Override
-    public void topologicalSort() {
+    public ArrayList<Integer> topologicalSort() {
+        ArrayList<Integer> sortedList = new ArrayList<>();
 
+        int[] inDegree = new int[vertexAmount];
+
+        for (int i = 0; i < edgeAmount; i++) {
+            for (int j = 0; j < vertexAmount; j++) {
+                if (matrix[j][i] == 1) {
+                    inDegree[j]++;
+                }
+            }
+        }
+
+        ArrayList<Integer> queue = new ArrayList<>();
+        for (int i = 0; i < vertexAmount; i++) {
+            if (inDegree[i] == 0) {
+                queue.add(i);
+            }
+        }
+
+        while (!queue.isEmpty()) {
+            int v = queue.remove(0);
+            sortedList.add(listOfVertex.get(v));
+            for (int i = 0; i < edgeAmount; i++) {
+                if (matrix[v][i] == -1) {
+                    for (int j = 0; j < vertexAmount; j++) {
+                        if (matrix[j][i] == 1) {
+                            inDegree[j]--;
+                            if (inDegree[j] == 0) {
+                                queue.add(j);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        if (sortedList.size() != vertexAmount) {
+            return null;
+        }
+        return sortedList;
     }
 
     @Override
@@ -154,7 +228,22 @@ public class IncidenceMatrixGraph implements Graph {
     }
 
     @Override
-    public void isEqual() {
-
+    public Boolean isEqual(Graph g) {
+        if (vertexAmount != g.getVertexAmount()) {
+            return false;
+        }
+        if (vertexAmount == 0) {
+            return true;
+        }
+        ArrayList<Integer> listV = g.getListOfVertex();
+        g.setListOfVertex(listOfVertex);
+        for (int i = 1; i <= vertexAmount; i++) {
+            if (!Objects.equals(this.neighbors(i), g.neighbors(i))) {
+                g.setListOfVertex(listV);
+                return false;
+            }
+        }
+        g.setListOfVertex(listV);
+        return true;
     }
 }
