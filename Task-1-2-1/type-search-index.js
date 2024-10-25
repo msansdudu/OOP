@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"nsu.chebotareva","l":"AdjacencyListGraph"},{"p":"nsu.chebotareva","l":"AdjacencyMatrixGraph"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"nsu.chebotareva","l":"Edge"},{"p":"nsu.chebotareva","l":"Graph"},{"p":"nsu.chebotareva","l":"IncidenceMatrixGraph"},{"p":"nsu.chebotareva","l":"Main"}]
