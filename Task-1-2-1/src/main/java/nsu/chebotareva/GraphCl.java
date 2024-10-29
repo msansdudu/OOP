@@ -7,9 +7,10 @@ import java.util.Objects;
 abstract public class GraphCl implements Graph{
     @Override
     public boolean equals(Object g1) {
-        if (!(g1 instanceof Graph g)) {
+        if (!(g1 instanceof Graph)) {
             return false;
         }
+        Graph g = (Graph) g1;
         if (this.getVertexAmount() != g.getVertexAmount()) {
             return false;
         }
