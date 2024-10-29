@@ -73,7 +73,7 @@ class AdjacencyListGraphTest {
         g2.addEdge(new Edge(2, 3));
         g1.print();
         g2.print();
-        assertTrue(g1.isEqual(g2));
+        assertTrue(g1.equals(g2));
     }
 
     @Test

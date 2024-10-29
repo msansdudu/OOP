@@ -64,9 +64,9 @@ class AdjacencyMatrixGraphTest {
         g2.addVertex();
         g2.addEdge(new Edge(2, 1));
         g2.addEdge(new Edge(1, 3));
-        assertTrue(g2.isEqual(g));
+        assertTrue(g2.equals(g));
         g2.removeVertex(2);
-        assertFalse(g.isEqual(g2));
+        assertFalse(g.equals(g2));
     }
 
     @Test

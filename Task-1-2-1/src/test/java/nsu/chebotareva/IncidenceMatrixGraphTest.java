@@ -65,9 +65,9 @@ class IncidenceMatrixGraphTest {
         g.addEdge(new Edge(3, 2));
         g.removeEdge(new Edge(1, 2));
         g.addEdge(new Edge(1, 2));
-        assertTrue(g.isEqual(g1));
+        assertTrue(g.equals(g1));
         g.removeVertex(1);
-        assertFalse(g.isEqual(g1));
+        assertFalse(g.equals(g1));
     }
 
     @Test
