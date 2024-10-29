@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":10,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var data = {"i0":6,"i1":6,"i2":10,"i3":6,"i4":10,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,32 +197,37 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;g1)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVertexAmount()">getVertexAmount</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Возвращает количество вершин.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEqual(nsu.chebotareva.Graph)">isEqual</a></span>&#8203;(<a href="Graph.html" title="interface in nsu.chebotareva">Graph</a>&nbsp;g)</code></th>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#neighbors(int)">neighbors</a></span>&#8203;(int&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Получить список соседей вершины v.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#print()">print</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Вывести граф.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(java.io.InputStream,java.lang.String)">read</a></span>&#8203;(java.io.InputStream&nbsp;input,
     java.lang.String&nbsp;regex)</code></th>
@@ -230,21 +235,21 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <div class="block">Считать граф.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeEdge(nsu.chebotareva.Edge)">removeEdge</a></span>&#8203;(<a href="Edge.html" title="class in nsu.chebotareva">Edge</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Удалить ребро.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeVertex(int)">removeVertex</a></span>&#8203;(int&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Удаляет вершину v.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>abstract java.util.ArrayList&lt;java.lang.Integer&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#topologicalSort()">topologicalSort</a></span>()</code></th>
 <td class="colLast">
@@ -257,7 +262,7 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -294,13 +299,30 @@ implements <a href="Graph.html" title="interface in nsu.chebotareva">Graph</a></
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="isEqual(nsu.chebotareva.Graph)">
+<a id="equals(java.lang.Object)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isEqual</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isEqual&#8203;(<a href="Graph.html" title="interface in nsu.chebotareva">Graph</a>&nbsp;g)</pre>
+<h4>equals</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;g1)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a id="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
 </li>
 </ul>
 <a id="getVertexAmount()">
