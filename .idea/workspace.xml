@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="division by zero and double eval">
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Div.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/main/java/nsu/chebotareva/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ExpressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ExpressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_1_3/src/test/java/nsu/chebotareva/ParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,9 @@
         <task path="$PROJECT_DIR$/Task_1_1_2">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/Task_1_1_3">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -53,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,65 +92,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HeapSort.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.Build Task_1_1_1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Task_1_1_2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CardsTest.testingNames.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DeckTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DeckTest.generatingDeck.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DeckTest.generatingDeckandNames.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FormingCardsTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.FormingCardsTest.testingDealingCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.HeapSortTest (1).executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.HeapSortTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.HeapSortTest.test_heapify.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.emptyDeck.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfGame.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfGame1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfGame2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfRound.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfRound2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfRound3.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.endOfRound4.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MainTest.game.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ParserTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ParserTest.parse.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ParserTest.parseFromInput.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.checkingAces.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.cleaningCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.dealingCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.printingCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.printingDealerCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.printingNewCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.printingNewDealerCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.printingOpenedDealerCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PersonTest.printingPlayerCards.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'nsu.chebotareva' (1).executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.Tests in 'nsu.chebotareva'.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.nsu.chebotareva in Task_1_1_2.main.executor&quot;: &quot;Coverage&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Shell Script.run.sh.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Task__1__1__3&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/msansdu/Documents/OOP&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HeapSort.executor": "Coverage",
+    "Application.Main.executor": "Run",
+    "Gradle.Build Task_1_1_1.executor": "Run",
+    "Gradle.Build Task_1_1_2.executor": "Run",
+    "Gradle.CardsTest.testingNames.executor": "Run",
+    "Gradle.DeckTest.executor": "Run",
+    "Gradle.DeckTest.generatingDeck.executor": "Run",
+    "Gradle.DeckTest.generatingDeckandNames.executor": "Run",
+    "Gradle.FormingCardsTest.executor": "Coverage",
+    "Gradle.FormingCardsTest.testingDealingCards.executor": "Run",
+    "Gradle.HeapSortTest (1).executor": "Coverage",
+    "Gradle.HeapSortTest.executor": "Coverage",
+    "Gradle.HeapSortTest.test_heapify.executor": "Run",
+    "Gradle.MainTest.emptyDeck.executor": "Run",
+    "Gradle.MainTest.endOfGame.executor": "Run",
+    "Gradle.MainTest.endOfGame1.executor": "Run",
+    "Gradle.MainTest.endOfGame2.executor": "Run",
+    "Gradle.MainTest.endOfRound.executor": "Run",
+    "Gradle.MainTest.endOfRound2.executor": "Run",
+    "Gradle.MainTest.endOfRound3.executor": "Run",
+    "Gradle.MainTest.endOfRound4.executor": "Run",
+    "Gradle.MainTest.executor": "Run",
+    "Gradle.MainTest.game.executor": "Run",
+    "Gradle.ParserTest.executor": "Run",
+    "Gradle.ParserTest.parse.executor": "Run",
+    "Gradle.ParserTest.parseFromInput.executor": "Run",
+    "Gradle.PersonTest.checkingAces.executor": "Run",
+    "Gradle.PersonTest.cleaningCards.executor": "Run",
+    "Gradle.PersonTest.dealingCards.executor": "Run",
+    "Gradle.PersonTest.executor": "Run",
+    "Gradle.PersonTest.printingCards.executor": "Run",
+    "Gradle.PersonTest.printingDealerCards.executor": "Run",
+    "Gradle.PersonTest.printingNewCards.executor": "Run",
+    "Gradle.PersonTest.printingNewDealerCards.executor": "Run",
+    "Gradle.PersonTest.printingOpenedDealerCards.executor": "Run",
+    "Gradle.PersonTest.printingPlayerCards.executor": "Run",
+    "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
+    "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
+    "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
+    "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
+    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
+    "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
+    "JUnit.nsu.chebotareva in Task_1_1_2.main.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.run.sh.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Task__1__2__2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/msansdu/Documents/OOP",
+    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -161,10 +164,10 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva' (1)">
-    <configuration name="Expression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Expression" />
-      <module name="Task_1_1_3.main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
+      <module name="Task_1_2_2.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nsu.chebotareva.*" />
@@ -273,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'nsu.chebotareva' (1)" />
         <item itemvalue="Gradle.ParserTest.parse" />
         <item itemvalue="Gradle.ParserTest" />
         <item itemvalue="Gradle.ParserTest.parseFromInput" />
-        <item itemvalue="Application.Expression" />
       </list>
     </recent_temporary>
   </component>
