@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="division by zero and double eval">
-      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="task122">
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/test/java/nsu/chebotareva/HashTableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +54,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -76,7 +75,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/msansdudu/OOP.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:msansdudu/OOP.git&quot;,
     &quot;accountId&quot;: &quot;971ff570-528c-4f60-afb8-cae1247a0bc8&quot;
   }
 }</component>
@@ -136,13 +135,20 @@
     "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
     "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
     "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
+    "JUnit.All in Task_1_2_2.test.executor": "Coverage",
+    "JUnit.HashTableTest.executor": "Run",
+    "JUnit.HashTableTest.testContainsKey.executor": "Run",
+    "JUnit.HashTableTest.testContainsKeyAndSize.executor": "Run",
+    "JUnit.HashTableTest.testEquals.executor": "Run",
+    "JUnit.HashTableTest.testRemove.executor": "Run",
+    "JUnit.HashTableTest.testToString.executor": "Run",
     "JUnit.nsu.chebotareva in Task_1_1_2.main.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__1__2__2",
+    "git-widget-placeholder": "#7 on Task__1__2__2",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
     "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
@@ -164,123 +170,78 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
-      <module name="Task_1_2_2.main" />
+  <component name="RunManager" selected="JUnit.All in Task_1_2_2.test (1)">
+    <configuration name="All in Task_1_2_2.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Task_1_2_2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTableTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nsu.chebotareva.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="nsu.chebotareva" />
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.HashTableTest" />
+      <option name="METHOD_NAME" value="mainTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.ParserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="HashTableTest.testContainsKeyAndSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nsu.chebotareva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nsu.chebotareva" />
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.HashTableTest" />
+      <option name="METHOD_NAME" value="testContainsKeyAndSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="ParserTest.parse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.ParserTest.parse&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ParserTest.parseFromInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.ParserTest.parseFromInput&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'nsu.chebotareva' (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_1_3" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.*&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="HashTableTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nsu.chebotareva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nsu.chebotareva" />
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.HashTableTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.Tests in 'nsu.chebotareva' (1)" />
-        <item itemvalue="Gradle.ParserTest.parse" />
-        <item itemvalue="Gradle.ParserTest" />
-        <item itemvalue="Gradle.ParserTest.parseFromInput" />
+        <item itemvalue="JUnit.All in Task_1_2_2.test (1)" />
+        <item itemvalue="JUnit.HashTableTest.mainTest" />
+        <item itemvalue="JUnit.All in Task_1_2_2.test" />
+        <item itemvalue="JUnit.HashTableTest.testContainsKeyAndSize" />
+        <item itemvalue="JUnit.HashTableTest.testToString" />
       </list>
     </recent_temporary>
   </component>
@@ -485,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728027963335</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="task122">
+      <option name="closed" value="true" />
+      <created>1730354986681</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730354986681</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +486,8 @@
     <MESSAGE value="parsing from files and inputstream" />
     <MESSAGE value="fixing style" />
     <MESSAGE value="division by zero and double eval" />
-    <option name="LAST_COMMIT_MESSAGE" value="division by zero and double eval" />
+    <MESSAGE value="task122" />
+    <option name="LAST_COMMIT_MESSAGE" value="task122" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
