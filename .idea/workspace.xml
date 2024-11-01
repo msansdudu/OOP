@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="task122">
-      <change afterPath="$PROJECT_DIR$/Task_1_2_2/src/test/java/nsu/chebotareva/HashTableTest.java" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="tests">
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_2_2/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_2_2/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/Task_1_1_3">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Task_1_2_2">
       <ProjectState />
     </projectState>
   </component>
@@ -135,8 +140,10 @@
     "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
     "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
     "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
+    "JUnit.All in Task_1_2_2.test (1).executor": "Coverage",
     "JUnit.All in Task_1_2_2.test.executor": "Coverage",
     "JUnit.HashTableTest.executor": "Run",
+    "JUnit.HashTableTest.mainTest.executor": "Run",
     "JUnit.HashTableTest.testContainsKey.executor": "Run",
     "JUnit.HashTableTest.testContainsKeyAndSize.executor": "Run",
     "JUnit.HashTableTest.testEquals.executor": "Run",
@@ -150,7 +157,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "#7 on Task__1__2__2",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/msansdu/Documents/OOP",
+    "last_opened_file_path": "/Users/msansdu/Documents/OOP/Task_1_2_2",
     "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -159,6 +166,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Task_1_2_2" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -454,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730354986681</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="tests">
+      <option name="closed" value="true" />
+      <created>1730450350204</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730450350204</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -487,9 +505,11 @@
     <MESSAGE value="fixing style" />
     <MESSAGE value="division by zero and double eval" />
     <MESSAGE value="task122" />
-    <option name="LAST_COMMIT_MESSAGE" value="task122" />
+    <MESSAGE value="tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test__1_.ic" NAME="All in Task_1_2_2.test (1) Coverage Results" MODIFIED="1730450326948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1727083632305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSort.ic" NAME="HeapSort Coverage Results" MODIFIED="1726139358064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
@@ -503,5 +523,6 @@
       <FILTER>nsu.chebotareva.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1728031173689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test.ic" NAME="All in Task_1_2_2.test Coverage Results" MODIFIED="1730450131258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
