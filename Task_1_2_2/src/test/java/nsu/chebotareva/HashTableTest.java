@@ -34,7 +34,7 @@ class HashTableTest {
         assertEquals(1, hashTable.get("one"));
         hashTable.put("two", 2.0);
         assertEquals(2.0, hashTable.get("two"));
-        hashTable.put("one", 1.0);
+        hashTable.update("one", 1.0);
         assertEquals(1.0, hashTable.get("one"));
     }
 
