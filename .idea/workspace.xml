@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_2_2/src/test/java/nsu/chebotareva/HashTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_2_2/src/test/java/nsu/chebotareva/HashTableTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="codestyle and javadoc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -569,7 +566,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730861204451</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="entry equals">
+      <option name="closed" value="true" />
+      <created>1730862392203</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730862392203</updated>
+    </task>
+    <task id="LOCAL-00032" summary="codestyle and javadoc">
+      <option name="closed" value="true" />
+      <created>1730863128879</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730863128879</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +618,9 @@
     <MESSAGE value="gradle" />
     <MESSAGE value="workspace.xml, smth else" />
     <MESSAGE value="tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests" />
+    <MESSAGE value="entry equals" />
+    <MESSAGE value="codestyle and javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="codestyle and javadoc" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test__1_.ic" NAME="All in Task_1_2_2.test (1) Coverage Results" MODIFIED="1730450326948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
