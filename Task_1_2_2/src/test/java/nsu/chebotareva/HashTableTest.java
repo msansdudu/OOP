@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -42,9 +43,15 @@ class HashTableTest {
     public void testRemove() {
         hashTable.put("one", 1);
         assertEquals(1, hashTable.get("one"));
-
         hashTable.remove("one");
         assertTrue(hashTable.isEmpty());
+        boolean res = false;
+        try {
+            hashTable.remove("one");
+        } catch (NoSuchElementException e) {
+            res = true;
+        }
+        assertTrue(res);
     }
 
     @Test
@@ -55,6 +62,7 @@ class HashTableTest {
         assertEquals(1, hashTable.size());
         hashTable.put("two", 2);
         assertEquals(2, hashTable.size());
+        assertTrue(hashTable.containsKey("two"));
         hashTable.remove("one");
         assertEquals(1, hashTable.size());
         assertFalse(hashTable.containsKey("one"));
@@ -79,8 +87,13 @@ class HashTableTest {
         hashTable.put("one", 1);
         hashTable.put("two", 2);
         Iterator<Map.Entry<String, Number>> iterator = hashTable.iterator();
-        hashTable.put("three", 3);
-        assertThrows(ConcurrentModificationException.class, iterator::next);
+        boolean res = false;
+        try {
+            hashTable.put("three", 3);
+        } catch (ConcurrentModificationException e) {
+            res = true;
+        }
+        assertTrue(res);
     }
 
     @Test

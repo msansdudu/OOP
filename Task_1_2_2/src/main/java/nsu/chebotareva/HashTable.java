@@ -151,12 +151,16 @@ public class HashTable<K, V> implements Iterable<Map.Entry<K, V>> {
         if (o == null || this.getClass() != o.getClass()) return false;
         HashTable<K, V> hashTable = (HashTable<K, V>) o;
         if (size != hashTable.size) return false;
-        for (Map.Entry<?, ?> entry : hashTable) {
-            if (!hashTable.containsKey((K) entry.getKey())) {
-                return false;
-            }
-            if (this.get((K) entry.getKey()) != hashTable.get((K) entry.getKey())) {
-                return false;
+        for (List<Entry<K, V>> bucket : table) {
+            if (bucket != null) {
+                for (Entry<K, V> entry : bucket) {
+                    if (!hashTable.containsKey(entry.getKey())) {
+                        return false;
+                    }
+                    if (this.get(entry.getKey()) != hashTable.get(entry.getKey())) {
+                        return false;
+                    }
+                }
             }
         }
         return true;
