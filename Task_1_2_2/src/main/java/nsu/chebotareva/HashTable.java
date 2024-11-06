@@ -36,25 +36,30 @@ public class HashTable<K, V> implements Iterable<Map.Entry<K, V>> {
         modCount++;
     }
 
-    public V get(K key) {
+    public V get(K key) throws NoSuchElementException{
         int index = hash(key);
-        if (table[index] == null) return null;
+        if (table[index] == null) throw new NoSuchElementException();
 
         for (Entry<K, V> entry : table[index]) {
             if (Objects.equals(entry.getKey(), key)) {
                 return entry.getValue();
             }
         }
-        return null;
+        throw new NoSuchElementException();
     }
 
     public boolean containsKey(K key) {
-        return get(key) != null;
+        try {
+            get(key);
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
     }
 
-    public V remove(K key) {
+    public V remove(K key) throws NoSuchElementException{
         int index = hash(key);
-        if (table[index] == null) return null;
+        if (table[index] == null) throw new NoSuchElementException();
 
         Iterator<Entry<K, V>> iterator = table[index].iterator();
         while (iterator.hasNext()) {
@@ -67,12 +72,12 @@ public class HashTable<K, V> implements Iterable<Map.Entry<K, V>> {
                 return value;
             }
         }
-        return null;
+        throw new NoSuchElementException();
     }
 
-    public void update(K key, V newValue) {
+    public void update(K key, V newValue) throws NoSuchElementException{
         int index = hash(key);
-        if (table[index] == null) return;
+        if (table[index] == null) throw new NoSuchElementException();
 
         for (Entry<K, V> entry : table[index]) {
             if (Objects.equals(entry.getKey(), key)) {
@@ -81,6 +86,7 @@ public class HashTable<K, V> implements Iterable<Map.Entry<K, V>> {
                 return;
             }
         }
+        throw new NoSuchElementException();
     }
 
     private void ensureCapacity() {
@@ -142,9 +148,18 @@ public class HashTable<K, V> implements Iterable<Map.Entry<K, V>> {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        HashTable<?, ?> hashTable = (HashTable<?, ?>) o;
-        return size == hashTable.size && Arrays.equals(table, hashTable.table);
+        if (o == null || this.getClass() != o.getClass()) return false;
+        HashTable<K, V> hashTable = (HashTable<K, V>) o;
+        if (size != hashTable.size) return false;
+        for (Map.Entry<?, ?> entry : hashTable) {
+            if (!hashTable.containsKey((K) entry.getKey())) {
+                return false;
+            }
+            if (this.get((K) entry.getKey()) != hashTable.get((K) entry.getKey())) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
