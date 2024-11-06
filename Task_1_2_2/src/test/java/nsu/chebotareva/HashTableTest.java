@@ -3,10 +3,7 @@ package nsu.chebotareva;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,23 +11,23 @@ class HashTableTest {
     private HashTable<String, Number> hashTable;
 
     @BeforeEach
-    public void setup() {
+    void setup() {
         hashTable = new HashTable<>();
     }
 
     @Test
-    public void mainTest(){
+    void mainTest(){
         Main.main(new String[]{""});
         assertTrue(true);
     }
 
     @Test
-    public void testCreateHashTable() {
+    void testCreateHashTable() {
         assertNotNull(hashTable);
     }
 
     @Test
-    public void testPutAndGetAndUpdate() {
+    void testPutAndGetAndUpdate() {
         hashTable.put("one", 1);
         assertEquals(1, hashTable.get("one"));
         hashTable.put("two", 2.0);
@@ -40,7 +37,7 @@ class HashTableTest {
     }
 
     @Test
-    public void testRemove() {
+    void testRemove() {
         hashTable.put("one", 1);
         assertEquals(1, hashTable.get("one"));
         hashTable.remove("one");
@@ -55,7 +52,7 @@ class HashTableTest {
     }
 
     @Test
-    public void testContainsKeyAndSize() {
+    void testContainsKeyAndSize() {
         assertEquals(0, hashTable.size());
         hashTable.put("one", 1);
         assertTrue(hashTable.containsKey("one"));
@@ -69,7 +66,7 @@ class HashTableTest {
     }
 
     @Test
-    public void testIterator() {
+    void testIterator() {
         hashTable.put("one", 1);
         hashTable.put("two", 2.0);
         Iterator<Map.Entry<String, Number>> iterator = hashTable.iterator();
@@ -83,7 +80,7 @@ class HashTableTest {
     }
 
     @Test
-    public void testConcurrentModificationException() {
+    void testConcurrentModificationException() {
         hashTable.put("one", 1);
         hashTable.put("two", 2);
         Iterator<Map.Entry<String, Number>> iterator = hashTable.iterator();
@@ -98,7 +95,7 @@ class HashTableTest {
     }
 
     @Test
-    public void testEquals() {
+    void testEquals() {
         HashTable<String, Number> table = new HashTable<>();
         hashTable.put("one", 1);
         table.put("one", 1);
@@ -108,7 +105,20 @@ class HashTableTest {
     }
 
     @Test
-    public void testToString() {
+    void testEntryEquals() {
+        Entry<String, Number> e1 = new Entry<>("one", 1);
+        Entry<String, Number> e2 = new Entry<>("one", 1);
+        assertTrue(e1.equals(e2));
+        assertTrue(e1.equals(e1));
+        e2.setValue(1.0);
+        assertFalse(e1.equals(e2));
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        assertFalse(e1.equals(list));
+    }
+
+    @Test
+    void testToString() {
         hashTable.put("one", 1);
         hashTable.put("two", 2.0);
         String str = hashTable.toString();
