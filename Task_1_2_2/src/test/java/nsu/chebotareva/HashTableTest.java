@@ -87,9 +87,10 @@ class HashTableTest {
         hashTable.put("one", 1);
         hashTable.put("two", 2);
         Iterator<Map.Entry<String, Number>> iterator = hashTable.iterator();
+        hashTable.put("three", 3);
         boolean res = false;
         try {
-            hashTable.put("three", 3);
+            iterator.next();
         } catch (ConcurrentModificationException e) {
             res = true;
         }
