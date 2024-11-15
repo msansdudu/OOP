@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="equals and hashcode" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="codestyle and javadoc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +23,9 @@
     <projectState path="$PROJECT_DIR$/Task_1_1_3">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/Task_1_2_2">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -33,7 +36,10 @@
         <task path="$PROJECT_DIR$/Task_1_1_2">
           <activation />
         </task>
-        <task path="$PROJECT_DIR$/Task-1-2-1">
+        <task path="$PROJECT_DIR$/Task_1_1_3">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Task_1_2_2">
           <activation />
         </task>
         <projects_view>
@@ -53,15 +59,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Task_1_2_2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,14 +99,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HeapSort.executor": "Coverage",
-    "Gradle.AdjacencyListGraphTest.executor": "Coverage",
-    "Gradle.AdjacencyListGraphTest.readAndEqual.executor": "Run",
-    "Gradle.AdjacencyListGraphTest.test.executor": "Run",
-    "Gradle.AdjacencyListGraphTest.topSort.executor": "Run",
-    "Gradle.AdjacencyMatrixGraphTest.executor": "Run",
-    "Gradle.AdjacencyMatrixGraphTest.read.executor": "Run",
-    "Gradle.AdjacencyMatrixGraphTest.test.executor": "Run",
-    "Gradle.AdjacencyMatrixGraphTest.topSort.executor": "Run",
+    "Application.Main.executor": "Run",
     "Gradle.Build Task_1_1_1.executor": "Run",
     "Gradle.Build Task_1_1_2.executor": "Run",
     "Gradle.CardsTest.testingNames.executor": "Run",
@@ -109,13 +108,15 @@
     "Gradle.DeckTest.generatingDeckandNames.executor": "Run",
     "Gradle.FormingCardsTest.executor": "Coverage",
     "Gradle.FormingCardsTest.testingDealingCards.executor": "Run",
+    "Gradle.HashTableTest.executor": "Coverage",
+    "Gradle.HashTableTest.testConcurrentModificationException.executor": "Run",
+    "Gradle.HashTableTest.testEntryEquals.executor": "Run",
+    "Gradle.HashTableTest.testEquals.executor": "Run",
+    "Gradle.HashTableTest.testPutAndGetAndUpdate.executor": "Run",
+    "Gradle.HashTableTest.testRemove.executor": "Run",
     "Gradle.HeapSortTest (1).executor": "Coverage",
     "Gradle.HeapSortTest.executor": "Coverage",
     "Gradle.HeapSortTest.test_heapify.executor": "Run",
-    "Gradle.IncidenceMatrixGraphTest.executor": "Run",
-    "Gradle.IncidenceMatrixGraphTest.readAndEqual.executor": "Run",
-    "Gradle.IncidenceMatrixGraphTest.test.executor": "Run",
-    "Gradle.IncidenceMatrixGraphTest.topSort.executor": "Run",
     "Gradle.MainTest.emptyDeck.executor": "Run",
     "Gradle.MainTest.endOfGame.executor": "Run",
     "Gradle.MainTest.endOfGame1.executor": "Run",
@@ -139,24 +140,33 @@
     "Gradle.PersonTest.printingNewDealerCards.executor": "Run",
     "Gradle.PersonTest.printingOpenedDealerCards.executor": "Run",
     "Gradle.PersonTest.printingPlayerCards.executor": "Run",
-    "Gradle.Task-1-2-1 [:nsu.chebotareva.Main.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
     "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
     "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
-    "Gradle.Tests in 'Task-1-2-1.test'.executor": "Run",
-    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Run",
+    "Gradle.Task_1_2_2 [:nsu.chebotareva.Main.main()].executor": "Run",
+    "Gradle.Tests in 'Task_1_2_2.test'.executor": "Coverage",
+    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
     "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
+    "JUnit.All in Task_1_2_2.test (1).executor": "Coverage",
+    "JUnit.All in Task_1_2_2.test.executor": "Coverage",
+    "JUnit.HashTableTest.executor": "Run",
+    "JUnit.HashTableTest.mainTest.executor": "Run",
+    "JUnit.HashTableTest.testContainsKey.executor": "Run",
+    "JUnit.HashTableTest.testContainsKeyAndSize.executor": "Run",
+    "JUnit.HashTableTest.testEquals.executor": "Run",
+    "JUnit.HashTableTest.testRemove.executor": "Run",
+    "JUnit.HashTableTest.testToString.executor": "Run",
     "JUnit.nsu.chebotareva in Task_1_1_2.main.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "#6 on Task__1__2__1",
+    "git-widget-placeholder": "#7 on Task__1__2__2",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/msansdu/Documents/OOP",
-    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task-1-2-1/src/main/java/chebotareva/Main.java",
+    "last_opened_file_path": "/Users/msansdu/Documents/OOP/Task_1_2_2",
+    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -164,6 +174,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Task_1_2_2" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -175,11 +188,11 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva'">
-    <configuration name="AdjacencyListGraphTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.HashTableTest">
+    <configuration name="HashTableTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -189,7 +202,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.AdjacencyListGraphTest&quot;" />
+            <option value="&quot;nsu.chebotareva.HashTableTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,10 +213,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AdjacencyListGraphTest.readAndEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HashTableTest.testConcurrentModificationException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -213,7 +226,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.AdjacencyListGraphTest.readAndEqual&quot;" />
+            <option value="&quot;nsu.chebotareva.HashTableTest.testConcurrentModificationException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,10 +237,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="IncidenceMatrixGraphTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HashTableTest.testEntryEquals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -237,7 +250,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.IncidenceMatrixGraphTest&quot;" />
+            <option value="&quot;nsu.chebotareva.HashTableTest.testEntryEquals&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,10 +261,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="IncidenceMatrixGraphTest.readAndEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HashTableTest.testRemove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -261,7 +274,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.IncidenceMatrixGraphTest.readAndEqual&quot;" />
+            <option value="&quot;nsu.chebotareva.HashTableTest.testRemove&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -272,10 +285,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'nsu.chebotareva'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'Task_1_2_2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -284,8 +297,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -298,11 +309,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
-        <item itemvalue="Gradle.AdjacencyListGraphTest.readAndEqual" />
-        <item itemvalue="Gradle.IncidenceMatrixGraphTest" />
-        <item itemvalue="Gradle.AdjacencyListGraphTest" />
-        <item itemvalue="Gradle.IncidenceMatrixGraphTest.readAndEqual" />
+        <item itemvalue="Gradle.HashTableTest" />
+        <item itemvalue="Gradle.HashTableTest.testEntryEquals" />
+        <item itemvalue="Gradle.HashTableTest.testConcurrentModificationException" />
+        <item itemvalue="Gradle.Tests in 'Task_1_2_2.test'" />
+        <item itemvalue="Gradle.HashTableTest.testRemove" />
       </list>
     </recent_temporary>
   </component>
@@ -507,31 +518,71 @@
       <option name="project" value="LOCAL" />
       <updated>1728027963335</updated>
     </task>
-    <task id="LOCAL-00025" summary="vertex, edges, printing and some reading">
+    <task id="LOCAL-00025" summary="task122">
       <option name="closed" value="true" />
-      <created>1729230247652</created>
+      <created>1730354986681</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1729230247652</updated>
+      <updated>1730354986681</updated>
     </task>
-    <task id="LOCAL-00026" summary="topsort, reading and tests">
+    <task id="LOCAL-00026" summary="tests">
       <option name="closed" value="true" />
-      <created>1729845681224</created>
+      <created>1730450350204</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1729845681225</updated>
+      <updated>1730450350204</updated>
     </task>
-    <task id="LOCAL-00027" summary="equals and hashcode">
+    <task id="LOCAL-00027" summary="gradle">
       <option name="closed" value="true" />
-      <created>1730168702149</created>
+      <created>1730450590037</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1730168702149</updated>
+      <updated>1730450590037</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="gradle">
+      <option name="closed" value="true" />
+      <created>1730773072203</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730773072203</updated>
+    </task>
+    <task id="LOCAL-00029" summary="workspace.xml, smth else">
+      <option name="closed" value="true" />
+      <created>1730860994869</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730860994869</updated>
+    </task>
+    <task id="LOCAL-00030" summary="tests">
+      <option name="closed" value="true" />
+      <created>1730861204451</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730861204451</updated>
+    </task>
+    <task id="LOCAL-00031" summary="entry equals">
+      <option name="closed" value="true" />
+      <created>1730862392203</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730862392203</updated>
+    </task>
+    <task id="LOCAL-00032" summary="codestyle and javadoc">
+      <option name="closed" value="true" />
+      <created>1730863128879</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730863128879</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,27 +614,31 @@
     <MESSAGE value="parsing from files and inputstream" />
     <MESSAGE value="fixing style" />
     <MESSAGE value="division by zero and double eval" />
-    <MESSAGE value="vertex, edges, printing and some reading" />
-    <MESSAGE value="topsort, reading and tests" />
-    <MESSAGE value="equals and hashcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="equals and hashcode" />
+    <MESSAGE value="task122" />
+    <MESSAGE value="gradle" />
+    <MESSAGE value="workspace.xml, smth else" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="entry equals" />
+    <MESSAGE value="codestyle and javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="codestyle and javadoc" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test__1_.ic" NAME="All in Task_1_2_2.test (1) Coverage Results" MODIFIED="1730450326948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1727083632305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSort.ic" NAME="HeapSort Coverage Results" MODIFIED="1726139358064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu_chebotareva.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1729855337450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva_.ic" NAME="Tests in 'nsu.chebotareva' Coverage Results" MODIFIED="1727427885639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$Tests_in__Task_1_2_2_test_.ic" NAME="Tests in 'Task_1_2_2.test' Coverage Results" MODIFIED="1730861102939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1727145995532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$nsu_chebotareva_in_Task_1_1_2_main.ic" NAME="nsu.chebotareva in Task_1_1_2.main Coverage Results" MODIFIED="1727146257846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>nsu.chebotareva.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1728031173689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/OOP$Tests_in__Task_1_2_1_test_.ic" NAME="Tests in 'Task-1-2-1.test' Coverage Results" MODIFIED="1729843995425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$FormingCardsTest.ic" NAME="FormingCardsTest Coverage Results" MODIFIED="1726662301666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/OOP$AdjacencyListGraphTest.ic" NAME="AdjacencyListGraphTest Coverage Results" MODIFIED="1729855183579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/OOP$IncidenceMatrixGraphTest.ic" NAME="IncidenceMatrixGraphTest Coverage Results" MODIFIED="1729855190159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$HashTableTest.ic" NAME="HashTableTest Coverage Results" MODIFIED="1730862228937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest__1_.ic" NAME="HeapSortTest (1) Coverage Results" MODIFIED="1726462624244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test.ic" NAME="All in Task_1_2_2.test Coverage Results" MODIFIED="1730450131258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
