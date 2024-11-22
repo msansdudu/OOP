@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="main">
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/SubstringFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_1_3_1/src/test/java/nsu/chebotareva/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="SubstringFinder">
+      <change afterPath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/SubstringFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/SubstringFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1_3_1/src/test/java/nsu/chebotareva/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_3_1/src/test/java/nsu/chebotareva/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -141,6 +135,9 @@
     "Gradle.MainTest.endOfRound4.executor": "Run",
     "Gradle.MainTest.executor": "Run",
     "Gradle.MainTest.game.executor": "Run",
+    "Gradle.MainTest.testA.executor": "Run",
+    "Gradle.MainTest.testAbracadabra.executor": "Run",
+    "Gradle.MainTest.testB.executor": "Run",
     "Gradle.ParserTest.executor": "Run",
     "Gradle.ParserTest.parse.executor": "Run",
     "Gradle.ParserTest.parseFromInput.executor": "Run",
@@ -169,7 +166,7 @@
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__1__3__1",
+    "git-widget-placeholder": "#8 on Task__1__3__1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
     "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_3_1/src/main/java/nsu/chebotareva/Main.java",
@@ -191,7 +188,7 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.MainTest.testA">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
       <module name="Task_1_3_1.main" />
@@ -205,10 +202,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdjacencyListGraphTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_3_1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -218,7 +215,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.AdjacencyListGraphTest&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,10 +226,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AdjacencyListGraphTest.readAndEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainTest.testA" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_3_1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -242,7 +239,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.AdjacencyListGraphTest.readAndEqual&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest.testA&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -253,10 +250,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="IncidenceMatrixGraphTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainTest.testAbracadabra" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_3_1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -266,7 +263,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.IncidenceMatrixGraphTest&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest.testAbracadabra&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -277,10 +274,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'nsu.chebotareva'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainTest.testB" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task-1-2-1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_3_1" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -290,7 +287,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.*&quot;" />
+            <option value="&quot;nsu.chebotareva.MainTest.testB&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -303,11 +300,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MainTest.testA" />
+        <item itemvalue="Gradle.MainTest" />
+        <item itemvalue="Gradle.MainTest.testB" />
+        <item itemvalue="Gradle.MainTest.testAbracadabra" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
-        <item itemvalue="Gradle.AdjacencyListGraphTest.readAndEqual" />
-        <item itemvalue="Gradle.IncidenceMatrixGraphTest" />
-        <item itemvalue="Gradle.AdjacencyListGraphTest" />
       </list>
     </recent_temporary>
   </component>
@@ -536,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730168702149</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="SubstringFinder">
+      <option name="closed" value="true" />
+      <created>1731652824868</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731652824868</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -571,7 +576,8 @@
     <MESSAGE value="vertex, edges, printing and some reading" />
     <MESSAGE value="topsort, reading and tests" />
     <MESSAGE value="equals and hashcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="equals and hashcode" />
+    <MESSAGE value="SubstringFinder" />
+    <option name="LAST_COMMIT_MESSAGE" value="SubstringFinder" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1727083632305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
@@ -584,6 +590,7 @@
       <FILTER>nsu.chebotareva.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP$Tests_in__nsu_chebotareva___1_.ic" NAME="Tests in 'nsu.chebotareva' (1) Coverage Results" MODIFIED="1728031173689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP$MainTest_testA.ic" NAME="MainTest.testA Coverage Results" MODIFIED="1731656588381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$Tests_in__Task_1_2_1_test_.ic" NAME="Tests in 'Task-1-2-1.test' Coverage Results" MODIFIED="1729843995425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$HeapSortTest.ic" NAME="HeapSortTest Coverage Results" MODIFIED="1726139390071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP$FormingCardsTest.ic" NAME="FormingCardsTest Coverage Results" MODIFIED="1726662301666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
