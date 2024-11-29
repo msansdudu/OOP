@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="codestyle and javadoc" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="codestyle and javadoc">
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/src/main/java/nsu/chebotareva/GradeBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/src/main/java/nsu/chebotareva/RecordEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_1_4_1/src/main/java/nsu/chebotareva/controlTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +37,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/Task_1_2_2">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Task_1_4_1">
       <ProjectState />
     </projectState>
   </component>
@@ -59,8 +75,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,7 +124,7 @@
     "Gradle.DeckTest.generatingDeckandNames.executor": "Run",
     "Gradle.FormingCardsTest.executor": "Coverage",
     "Gradle.FormingCardsTest.testingDealingCards.executor": "Run",
-    "Gradle.HashTableTest.executor": "Coverage",
+    "Gradle.HashTableTest.executor": "Run",
     "Gradle.HashTableTest.testConcurrentModificationException.executor": "Run",
     "Gradle.HashTableTest.testEntryEquals.executor": "Run",
     "Gradle.HashTableTest.testEquals.executor": "Run",
@@ -145,6 +161,7 @@
     "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
     "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
     "Gradle.Task_1_2_2 [:nsu.chebotareva.Main.main()].executor": "Run",
+    "Gradle.Task_1_4_1 [:nsu.chebotareva.Main.main()].executor": "Run",
     "Gradle.Tests in 'Task_1_2_2.test'.executor": "Coverage",
     "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
     "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
@@ -163,10 +180,10 @@
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "#7 on Task__1__2__2",
+    "git-widget-placeholder": "Task__1__4__1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP/Task_1_2_2",
-    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_1_3/src/main/java/nsu/chebotareva/Main.java",
+    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_4_1/src/main/java/nsu/chebotareva/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -188,7 +205,20 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HashTableTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
+      <module name="Task_1_4_1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nsu.chebotareva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HashTableTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -261,30 +291,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HashTableTest.testRemove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.HashTableTest.testRemove&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'Task_1_2_2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -309,11 +315,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.HashTableTest" />
         <item itemvalue="Gradle.HashTableTest.testEntryEquals" />
         <item itemvalue="Gradle.HashTableTest.testConcurrentModificationException" />
         <item itemvalue="Gradle.Tests in 'Task_1_2_2.test'" />
-        <item itemvalue="Gradle.HashTableTest.testRemove" />
       </list>
     </recent_temporary>
   </component>
