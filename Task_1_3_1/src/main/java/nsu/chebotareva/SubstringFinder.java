@@ -18,46 +18,50 @@ public class SubstringFinder {
         int amountOfOccurences = 0;
         int amountOfSymbols = 0;
 
-        long pos = 0;
-        int readChar;
-        int EOF = substrLen * 2 + 1;
+        try {
+            long pos = 0;
+            int readChar;
+            int EOF = substrLen * 2 + 1;
 
-        for (int i = 0; i < substrLen; i++) {
-            readChar = file.read();
-            amountOfSymbols++;
-            if (readChar == -1) {
-                EOF = i + substrLen;
-                break;
-            }
-            buffer[i] = (char) readChar;
-        }
-
-        while (EOF > substrLen) {
             for (int i = 0; i < substrLen; i++) {
                 readChar = file.read();
                 amountOfSymbols++;
                 if (readChar == -1) {
-                    EOF = i;
+                    EOF = i + substrLen;
                     break;
                 }
-                buffer[i + substrLen] = (char) readChar;
+                buffer[i] = (char) readChar;
             }
-            for (int i = 0; i <= bufferSize - substrLen; i++) {
-                if (isMatch(buffer, substr, i, substrLen, EOF)) {
-                    if (amountOfOccurences == 0 || index.get(amountOfOccurences - 1) != pos + i) {
-                        index.add(pos + i);
-                        amountOfOccurences++;
+
+            while (EOF > substrLen) {
+                for (int i = 0; i < substrLen; i++) {
+                    readChar = file.read();
+                    amountOfSymbols++;
+                    if (readChar == -1) {
+                        EOF = i;
+                        break;
+                    }
+                    buffer[i + substrLen] = (char) readChar;
+                }
+                for (int i = 0; i <= bufferSize - substrLen; i++) {
+                    if (isMatch(buffer, substr, i, substrLen, EOF)) {
+                        if (amountOfOccurences == 0 || index.get(amountOfOccurences - 1) != pos + i) {
+                            index.add(pos + i);
+                            amountOfOccurences++;
+                        }
                     }
                 }
-            }
 
-            pos += bufferSize - substrLen;
+                pos += bufferSize - substrLen;
 
-            for (int i = 0; i < substrLen; i++) {
-                buffer[i] = buffer[i + substrLen];
+                for (int i = 0; i < substrLen; i++) {
+                    buffer[i] = buffer[i + substrLen];
+                }
             }
         }
-        file.close();
+        finally {
+            file.close();
+        }
         amountOfSymbols--;
         if (amountOfOccurences != 0 && index.get(amountOfOccurences - 1) == amountOfSymbols) {
             index.remove(amountOfOccurences - 1);
