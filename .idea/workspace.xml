@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="codestyle and javadoc">
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="pr1">
+      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByParallelStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/InSeries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,15 +68,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Task_2_1_1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,83 +105,84 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HeapSort.executor": "Coverage",
-    "Application.Main.executor": "Run",
-    "Gradle.Build Task_1_1_1.executor": "Run",
-    "Gradle.Build Task_1_1_2.executor": "Run",
-    "Gradle.CardsTest.testingNames.executor": "Run",
-    "Gradle.DeckTest.executor": "Run",
-    "Gradle.DeckTest.generatingDeck.executor": "Run",
-    "Gradle.DeckTest.generatingDeckandNames.executor": "Run",
-    "Gradle.FormingCardsTest.executor": "Coverage",
-    "Gradle.FormingCardsTest.testingDealingCards.executor": "Run",
-    "Gradle.HashTableTest.executor": "Coverage",
-    "Gradle.HashTableTest.testConcurrentModificationException.executor": "Run",
-    "Gradle.HashTableTest.testEntryEquals.executor": "Run",
-    "Gradle.HashTableTest.testEquals.executor": "Run",
-    "Gradle.HashTableTest.testPutAndGetAndUpdate.executor": "Run",
-    "Gradle.HashTableTest.testRemove.executor": "Run",
-    "Gradle.HeapSortTest (1).executor": "Coverage",
-    "Gradle.HeapSortTest.executor": "Coverage",
-    "Gradle.HeapSortTest.test_heapify.executor": "Run",
-    "Gradle.MainTest.emptyDeck.executor": "Run",
-    "Gradle.MainTest.endOfGame.executor": "Run",
-    "Gradle.MainTest.endOfGame1.executor": "Run",
-    "Gradle.MainTest.endOfGame2.executor": "Run",
-    "Gradle.MainTest.endOfRound.executor": "Run",
-    "Gradle.MainTest.endOfRound2.executor": "Run",
-    "Gradle.MainTest.endOfRound3.executor": "Run",
-    "Gradle.MainTest.endOfRound4.executor": "Run",
-    "Gradle.MainTest.executor": "Run",
-    "Gradle.MainTest.game.executor": "Run",
-    "Gradle.ParserTest.executor": "Run",
-    "Gradle.ParserTest.parse.executor": "Run",
-    "Gradle.ParserTest.parseFromInput.executor": "Run",
-    "Gradle.PersonTest.checkingAces.executor": "Run",
-    "Gradle.PersonTest.cleaningCards.executor": "Run",
-    "Gradle.PersonTest.dealingCards.executor": "Run",
-    "Gradle.PersonTest.executor": "Run",
-    "Gradle.PersonTest.printingCards.executor": "Run",
-    "Gradle.PersonTest.printingDealerCards.executor": "Run",
-    "Gradle.PersonTest.printingNewCards.executor": "Run",
-    "Gradle.PersonTest.printingNewDealerCards.executor": "Run",
-    "Gradle.PersonTest.printingOpenedDealerCards.executor": "Run",
-    "Gradle.PersonTest.printingPlayerCards.executor": "Run",
-    "Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor": "Run",
-    "Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor": "Run",
-    "Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor": "Run",
-    "Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor": "Run",
-    "Gradle.Task_1_2_2 [:nsu.chebotareva.Main.main()].executor": "Run",
-    "Gradle.Tests in 'Task_1_2_2.test'.executor": "Coverage",
-    "Gradle.Tests in 'nsu.chebotareva' (1).executor": "Coverage",
-    "Gradle.Tests in 'nsu.chebotareva'.executor": "Run",
-    "JUnit.All in Task_1_2_2.test (1).executor": "Coverage",
-    "JUnit.All in Task_1_2_2.test.executor": "Coverage",
-    "JUnit.HashTableTest.executor": "Run",
-    "JUnit.HashTableTest.mainTest.executor": "Run",
-    "JUnit.HashTableTest.testContainsKey.executor": "Run",
-    "JUnit.HashTableTest.testContainsKeyAndSize.executor": "Run",
-    "JUnit.HashTableTest.testEquals.executor": "Run",
-    "JUnit.HashTableTest.testRemove.executor": "Run",
-    "JUnit.HashTableTest.testToString.executor": "Run",
-    "JUnit.nsu.chebotareva in Task_1_1_2.main.executor": "Coverage",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script.run.sh.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__2__1__1",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/msansdu/Documents/OOP/Task_1_2_2",
-    "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HeapSort.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Task_1_1_1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Task_1_1_2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CardsTest.testingNames.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeckTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeckTest.generatingDeck.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeckTest.generatingDeckandNames.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FormingCardsTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.FormingCardsTest.testingDealingCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HashTableTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HashTableTest.testConcurrentModificationException.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HashTableTest.testEntryEquals.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HashTableTest.testEquals.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HashTableTest.testPutAndGetAndUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HashTableTest.testRemove.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HeapSortTest (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.HeapSortTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.HeapSortTest.test_heapify.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.emptyDeck.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfGame1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfGame2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfRound.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfRound2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfRound3.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.endOfRound4.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MainTest.game.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParserTest.parse.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParserTest.parseFromInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.checkingAces.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.cleaningCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.dealingCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.printingCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.printingDealerCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.printingNewCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.printingNewDealerCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.printingOpenedDealerCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PersonTest.printingPlayerCards.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_1_1_1 [:nsu.chebotareva.HeapSort.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_1_1_1 [:nsu_chebotareva.HeapSort.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_1_1_2 [:nsu.chebotareva.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_1_1_3 [:nsu.chebotareva.Expression.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_1_2_2 [:nsu.chebotareva.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_2_1_1 [:nsu.chebotareva.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Task_1_2_2.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Tests in 'nsu.chebotareva' (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Tests in 'nsu.chebotareva'.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Task_1_2_2.test (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in Task_1_2_2.test.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.HashTableTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.mainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.testContainsKey.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.testContainsKeyAndSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.testEquals.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.testRemove.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.testToString.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.nsu.chebotareva in Task_1_1_2.main.executor&quot;: &quot;Coverage&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script.run.sh.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#10 on Task__2__1__1&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/msansdu/Documents/OOP/Task_1_2_2&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/msansdu/Documents/OOP/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Task_1_2_2" />
@@ -198,7 +198,20 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HashTableTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nsu.chebotareva.Main" />
+      <module name="Task_2_1_1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nsu.chebotareva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HashTableTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -271,30 +284,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HashTableTest.testRemove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Task_1_2_2" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nsu.chebotareva.HashTableTest.testRemove&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'Task_1_2_2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -319,11 +308,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.HashTableTest" />
         <item itemvalue="Gradle.HashTableTest.testEntryEquals" />
         <item itemvalue="Gradle.HashTableTest.testConcurrentModificationException" />
         <item itemvalue="Gradle.Tests in 'Task_1_2_2.test'" />
-        <item itemvalue="Gradle.HashTableTest.testRemove" />
       </list>
     </recent_temporary>
   </component>
@@ -592,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730863128879</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="pr1">
+      <option name="closed" value="true" />
+      <created>1738636943949</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1738636943949</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -630,7 +627,8 @@
     <MESSAGE value="tests" />
     <MESSAGE value="entry equals" />
     <MESSAGE value="codestyle and javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="codestyle and javadoc" />
+    <MESSAGE value="pr1" />
+    <option name="LAST_COMMIT_MESSAGE" value="pr1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test__1_.ic" NAME="All in Task_1_2_2.test (1) Coverage Results" MODIFIED="1730450326948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
