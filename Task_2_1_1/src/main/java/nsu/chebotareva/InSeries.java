@@ -4,7 +4,7 @@ public class InSeries {
     /**
      * Основная функция.
      *
-     * @param arr -- массив чисел.
+     * @param arr -- массив чисел в виде int[].
      * @return -- true если есть хотя бы одно простое, иначе false.
      */
     public static boolean isAnyNotPrime(int[] arr) {
@@ -15,6 +15,22 @@ public class InSeries {
         }
         return false;
     }
+
+    /**
+     * Основная функция.
+     *
+     * @param arr -- массив чисел в виде Integer[].
+     * @return -- true если есть хотя бы одно простое, иначе false.
+     */
+    public static boolean isAnyNotPrime(Integer[] arr) {
+        for(int n:arr) {
+            if (!isPrime(n)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     /**
      * Вспомогательная функция для отдельного числа.
