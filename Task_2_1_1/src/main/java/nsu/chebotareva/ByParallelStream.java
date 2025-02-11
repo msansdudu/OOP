@@ -10,7 +10,7 @@ public class ByParallelStream {
      * @param arr1 -- массив чисел.
      * @return -- true если есть хотя бы одно простое, иначе false.
      */
-    public static boolean isAnyPrime(Integer[] arr1) {
+    public static boolean isAnyNotPrime(Integer[] arr1) {
         List<Integer> arr = Arrays.asList(arr1);
         return arr.parallelStream().anyMatch(n -> !isPrime(n));
     }

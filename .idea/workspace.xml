@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="pr1">
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByParallelStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/InSeries.java" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="by series and by parallelStream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByParallelStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByParallelStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByThreads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -589,7 +588,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738636943949</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="by series and by parallelStream">
+      <option name="closed" value="true" />
+      <created>1739170294785</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1739170294785</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -628,7 +635,8 @@
     <MESSAGE value="entry equals" />
     <MESSAGE value="codestyle and javadoc" />
     <MESSAGE value="pr1" />
-    <option name="LAST_COMMIT_MESSAGE" value="pr1" />
+    <MESSAGE value="by series and by parallelStream" />
+    <option name="LAST_COMMIT_MESSAGE" value="by series and by parallelStream" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test__1_.ic" NAME="All in Task_1_2_2.test (1) Coverage Results" MODIFIED="1730450326948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
