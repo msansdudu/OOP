@@ -9,6 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class InSeriesTest {
 
     @Test
+    void main(){
+        Main.main(new String[0]);
+        assertTrue(true);
+    }
+
+    @Test
     void allPrime(){
         int[] arr = {20319251, 6997901, 6997927, 6997937, 17858849, 6997967,
                 6998009, 6998029, 6998039, 20165149, 6998051, 6998053};

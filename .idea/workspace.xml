@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="byThreads way">
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/test/java/nsu/chebotareva/AdditionalFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/test/java/nsu/chebotareva/ByParallelStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/test/java/nsu/chebotareva/ByThreadsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_2_1_1/src/test/java/nsu/chebotareva/InSeriesTest.java" afterDir="false" />
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="fixing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByParallelStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByParallelStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/ByThreads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/main/java/nsu/chebotareva/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2_1_1/src/test/java/nsu/chebotareva/ByThreadsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2_1_1/src/test/java/nsu/chebotareva/ByThreadsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +208,7 @@
       <recent name="nsu_chebotareva" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'nsu.chebotareva'">
+  <component name="RunManager" selected="Gradle.ByParallelStreamTest.timeTest">
     <configuration name="ByParallelStreamTest.timeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -337,11 +331,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
-        <item itemvalue="Gradle.ByThreadsTest.notAllPrime" />
         <item itemvalue="Gradle.ByParallelStreamTest.timeTest" />
         <item itemvalue="Gradle.ByThreadsTest.timeTest" />
         <item itemvalue="Gradle.InSeriesTest.timeTest" />
+        <item itemvalue="Gradle.Tests in 'nsu.chebotareva'" />
+        <item itemvalue="Gradle.ByThreadsTest.notAllPrime" />
       </list>
     </recent_temporary>
   </component>
@@ -634,7 +628,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739243823150</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="tests with time measure">
+      <option name="closed" value="true" />
+      <created>1739252876409</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1739252876409</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fixing">
+      <option name="closed" value="true" />
+      <created>1739252924210</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1739252924210</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -649,8 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit task1" />
-    <MESSAGE value="first fixing style" />
     <MESSAGE value="better coverage" />
     <MESSAGE value="dealing cards and printing them" />
     <MESSAGE value="making rounds, score and dealers playing" />
@@ -674,7 +682,9 @@
     <MESSAGE value="pr1" />
     <MESSAGE value="by series and by parallelStream" />
     <MESSAGE value="byThreads way" />
-    <option name="LAST_COMMIT_MESSAGE" value="byThreads way" />
+    <MESSAGE value="tests with time measure" />
+    <MESSAGE value="fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$All_in_Task_1_2_2_test__1_.ic" NAME="All in Task_1_2_2.test (1) Coverage Results" MODIFIED="1730450326948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

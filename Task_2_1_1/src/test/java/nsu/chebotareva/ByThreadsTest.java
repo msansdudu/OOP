@@ -33,11 +33,17 @@ class ByThreadsTest {
     void timeTest() throws InterruptedException {
         int[] arr1 = AdditionalFunctions.generatingPrimeArr(10000);
         Integer[] arr = IntStream.of(arr1).boxed().toArray(Integer[]::new);
-        for (int i = 1; i < 200; i += 3) {
+        for (int i = 1; i < 15; i += 1) {
             long start = System.currentTimeMillis();
             assertFalse(ByThreads.isAnyNotPrime(arr, i));
             long end = System.currentTimeMillis();
-            System.out.format("By Threads with \t%d threads, time \t%d\n", i, end - start);
+            System.out.format("%d %d\n", i, end - start);
+        }
+        for (int i = 15; i < 200; i += 3) {
+            long start = System.currentTimeMillis();
+            assertFalse(ByThreads.isAnyNotPrime(arr, i));
+            long end = System.currentTimeMillis();
+            System.out.format("%d %d\n", i, end - start);
         }
     }
 }
