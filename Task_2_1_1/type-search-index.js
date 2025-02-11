@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"nsu.chebotareva","l":"ByParallelStream"},{"p":"nsu.chebotareva","l":"ByThreads"},{"p":"nsu.chebotareva","l":"InSeries"},{"p":"nsu.chebotareva","l":"Main"}];updateSearchResults();
