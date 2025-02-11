@@ -1,7 +1,5 @@
 package nsu.chebotareva;
 
-import java.util.Arrays;
-
 public class AdditionalFunctions {
     public static boolean isPrime(int n) {
         if (n < 2) {
