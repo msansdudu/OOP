@@ -64,7 +64,7 @@ public class SnakeController {
         }
     }
 
-    private void updateGame() {
+    void updateGame() {
         game.move();
         SnakeView.render(gc, game, gameCanvas, cellSize);
 

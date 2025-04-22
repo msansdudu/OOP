@@ -68,7 +68,7 @@ public class SnakeView {
         gc.fillRoundRect(50, gameCanvas.getHeight() / 2 - 40, gameCanvas.getWidth() - 100, 60, 15, 15);
         gc.setFill(Color.WHITE);
         gc.setFont(new javafx.scene.text.Font(30));
-        gc.fillText("You win!", gameCanvas.getWidth() / 2 - 75, gameCanvas.getHeight() / 2);
+        gc.fillText("You win!", gameCanvas.getWidth() / 2 - 70, gameCanvas.getHeight() / 2);
     }
 
     public static void foodRender(GraphicsContext gc, SnakeModel game, int i, int cellSize) {

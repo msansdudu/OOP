@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class SnakeModel {
-    private final int victoryScore = 40;
+    private final int victoryScore = 30;
     private final int maxFoodScore = 2;
     private final int width;
     private final int height;
