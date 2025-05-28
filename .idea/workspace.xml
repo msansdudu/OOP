@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="upd">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/SubstringFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1_3_1/src/main/java/nsu/chebotareva/SubstringFinder.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ca0ca5f-51b8-436b-a2e9-e504dd0f9f81" name="Changes" comment="upd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +43,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/Task_1_3_1">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Task_2_1_1">
           <activation />
         </task>
         <projects_view>
@@ -169,7 +169,7 @@
     "Shell Script.run.sh.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Task__1__3__1",
+    "git-widget-placeholder": "#10 on Task__2__1__1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/msansdu/Documents/OOP",
     "onboarding.tips.debug.path": "/Users/msansdu/Documents/OOP/Task_1_3_1/src/main/java/nsu/chebotareva/Main.java",
@@ -301,6 +301,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.MainTest" />
+      <item itemvalue="Gradle.MainTest.testA" />
+      <item itemvalue="Gradle.MainTest.testAbracadabra" />
+      <item itemvalue="Gradle.MainTest.testB" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MainTest.testAbracadabra" />
