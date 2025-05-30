@@ -35,7 +35,14 @@ public class SnakeView {
             new Image(Objects.requireNonNull(SnakeView.class.getResourceAsStream("/nsu/chebotareva/task_2_3_1/apple.png"))),
             new Image(Objects.requireNonNull(SnakeView.class.getResourceAsStream("/nsu/chebotareva/task_2_3_1/banana.png"))),
             new Image(Objects.requireNonNull(SnakeView.class.getResourceAsStream("/nsu/chebotareva/task_2_3_1/cherry.png")))
-            );
+    );
+
+    static private final List<Color[]> snakeColors = List.of(
+            new Color[]{Color.ORANGERED, Color.DARKRED, Color.MAROON}, // Игрок
+            new Color[]{Color.BLUE, Color.DARKBLUE, Color.NAVY},       // Робот 1
+            new Color[]{Color.PURPLE, Color.DARKMAGENTA, Color.DARKVIOLET}, // Робот 2
+            new Color[]{Color.YELLOW, Color.GOLD, Color.DARKGOLDENROD} // Робот 3
+    );
 
     public static String getReleasedButton() {
         return releasedButton;
@@ -50,7 +57,7 @@ public class SnakeView {
             for (int y = 0; y < game.getHeight(); y++) {
                 Color color = (x + y) % 2 == 0 ? Color.LAWNGREEN : Color.GREENYELLOW;
                 gc.setFill(color.desaturate());
-                gc.fillRoundRect(x * cellSize, y * cellSize, cellSize*0.97, cellSize*0.97, 10, 10);
+                gc.fillRoundRect(x * cellSize, y * cellSize, cellSize * 0.97, cellSize * 0.97, 10, 10);
             }
         }
     }
@@ -77,17 +84,19 @@ public class SnakeView {
         gc.drawImage(foodImage, food[0] * cellSize, food[1] * cellSize, cellSize, cellSize);
     }
 
-    public static void snakeRender(GraphicsContext gc, SnakeModel game, int cellSize){
-        for (int i = 0; i < game.getSnake().size(); i++) {
-            int[] segment = game.getSnake().get(i);
+    public static void snakeRender(GraphicsContext gc, SnakeModel.Snake snake, int cellSize, int snakeIndex) {
+        if (!snake.isAlive()) return;
+        Color[] colors = snakeColors.get(snakeIndex % snakeColors.size());
+        for (int i = 0; i < snake.getBody().size(); i++) {
+            int[] segment = snake.getBody().get(i);
             if (i == 0) {
-                gc.setFill(Color.ORANGERED);
-            } else if (i == game.getSnake().size() - 1) {
-                gc.setFill(Color.MAROON);
+                gc.setFill(colors[0]);
+            } else if (i == snake.getBody().size() - 1) {
+                gc.setFill(colors[2]);
             } else {
-                gc.setFill(Color.DARKRED);
+                gc.setFill(colors[1]);
             }
-            gc.fillRoundRect(segment[0] * cellSize, segment[1] * cellSize, cellSize*0.95, cellSize*0.95, 5, 5);
+            gc.fillRoundRect(segment[0] * cellSize, segment[1] * cellSize, cellSize * 0.95, cellSize * 0.95, 5, 5);
         }
     }
 
@@ -98,10 +107,12 @@ public class SnakeView {
         for (int i = 0; i < game.getAmountOfFood(); i++) {
             foodRender(gc, game, i, cellSize);
         }
-        snakeRender(gc, game, cellSize);
+        for (int i = 0; i < game.getSnakes().size(); i++) {
+            snakeRender(gc, game.getSnakes().get(i), cellSize, i);
+        }
         gc.setFill(Color.BLACK);
         gc.setFont(new javafx.scene.text.Font("Arial", 20));
-        gc.fillText("Score: " + game.getScore(), 10, 30);
+        gc.fillText("Score: " + game.getSnakes().get(0).getScore(), 10, 30);
 
         if (game.isVictory()) {
             victoryRender(gc, gameCanvas);
@@ -109,6 +120,7 @@ public class SnakeView {
             gameIsOverRender(gc, gameCanvas);
         }
     }
+
     public static int sizeOfFoodImages() {
         return foodImages.size();
     }
