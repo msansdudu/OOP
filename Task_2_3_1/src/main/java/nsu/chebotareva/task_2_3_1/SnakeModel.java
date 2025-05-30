@@ -1,6 +1,5 @@
 package nsu.chebotareva.task_2_3_1;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Random;
 import java.util.List;
@@ -12,7 +11,7 @@ public class SnakeModel {
     private final int height;
     private final List<Snake> snakes;
     private final LinkedList<int[]> food;
-    private final int[] foodScore = new int[SnakeView.sizeOfFoodImages()];
+    private final int[] foodScore;
     private final Random random;
     private final int amountOfFood = 3;
     private final List<AIStrategy> strategies;
@@ -166,10 +165,12 @@ public class SnakeModel {
         this.food = new LinkedList<>();
         this.random = new Random();
         this.strategies = List.of(new RandomStrategy(), new FoodSeekingStrategy(), new CautiousStrategy());
+        this.foodScore = new int[SnakeView.sizeOfFoodImages()];
 
+        // Инициализация змейки игрока
         snakes.add(new Snake(width / 2, height / 2, "PLAYER", null));
 
-        // Инициализация роботов с случайными стратегиями
+        // Инициализация роботов со случайными стратегиями
         int[][] startPositions = {
                 {width / 4, height / 4},
                 {3 * width / 4, height / 4},
@@ -181,13 +182,18 @@ public class SnakeModel {
             snakes.add(new Snake(pos[0], pos[1], "ROBOT", randomStrategy));
         }
 
-        for (int i = 0; i < amountOfFood; i++) {
-            spawnFood(-1);
-        }
-        for (int i = 0; i < SnakeView.sizeOfFoodImages(); i++) {
+        // Инициализация очков за еду
+        for (int i = 0; i < foodScore.length; i++) {
             foodScore[i] = random.nextInt(maxFoodScore) + 1;
         }
-        System.out.println(Arrays.toString(foodScore));
+
+        // Создание еды с проверкой корректности очков
+        for (int i = 0; i < amountOfFood; i++) {
+            spawnFood(-1);
+            if (food.get(i)[3] <= 0) {
+                food.get(i)[3] = 1;
+            }
+        }
     }
 
     public void changeDirection(String newDirection, Snake snake) {
@@ -224,7 +230,17 @@ public class SnakeModel {
                 case "RIGHT": newX++; break;
             }
 
-            if (newX < 0 || newY < 0 || newX >= width || newY >= height || willCollideWithSnake(newX, newY, snake)) {
+            // Проверка столкновений со стенами
+            if (newX < 0 || newY < 0 || newX >= width || newY >= height) {
+                snake.setAlive(false);
+                if (snake.getType().equals("ROBOT")) {
+                    deadRobots.add(snake);
+                }
+                continue;
+            }
+
+            // Проверка столкновений со змейками
+            if (willCollideWithSnake(newX, newY, snake)) {
                 snake.setAlive(false);
                 if (snake.getType().equals("ROBOT")) {
                     deadRobots.add(snake);
@@ -236,7 +252,11 @@ public class SnakeModel {
             boolean ateFood = false;
             for (int i = 0; i < amountOfFood; i++) {
                 if (newX == food.get(i)[0] && newY == food.get(i)[1]) {
-                    snake.increaseScore(food.get(i)[3]);
+                    int points = food.get(i)[3];
+                    if (points <= 0) {
+                        points = 1;
+                    }
+                    snake.increaseScore(points);
                     if (snake.getScore() >= victoryScore) {
                         snake.setAlive(false);
                         if (snake.getType().equals("ROBOT")) {
@@ -253,7 +273,7 @@ public class SnakeModel {
             }
         }
 
-        // Возрождение мёртвых роботов с новой случайной стратегией
+        // Возрождение мёртвых роботов
         for (Snake deadRobot : deadRobots) {
             int index = snakes.indexOf(deadRobot);
             snakes.set(index, respawnRobotSnake());
@@ -272,24 +292,23 @@ public class SnakeModel {
 
     private void spawnFood(int i) {
         int x, y;
+        do {
+            x = random.nextInt(width);
+            y = random.nextInt(height);
+        } while (foodCollision(x, y) || collidesWithAnySnake(x, y));
+        int foodnum = random.nextInt(SnakeView.sizeOfFoodImages());
+        if (foodnum >= foodScore.length) {
+            foodnum = 0;
+        }
+        int points = foodScore[foodnum];
+        if (points <= 0) {
+            points = 1;
+        }
+        int[] newFood = new int[]{x, y, foodnum, points};
         if (i != -1) {
-            do {
-                do {
-                    x = random.nextInt(width);
-                    y = random.nextInt(height);
-                } while (foodCollision(x, y));
-            } while (collidesWithAnySnake(x, y));
-            int foodnum = random.nextInt(SnakeView.sizeOfFoodImages());
-            food.set(i, new int[]{x, y, foodnum, foodScore[foodnum]});
+            food.set(i, newFood);
         } else {
-            do {
-                do {
-                    x = random.nextInt(width);
-                    y = random.nextInt(height);
-                } while (foodCollision(x, y));
-            } while (collidesWithAnySnake(x, y));
-            int foodnum = random.nextInt(SnakeView.sizeOfFoodImages());
-            food.add(new int[]{x, y, foodnum, foodScore[foodnum]});
+            food.add(newFood);
         }
     }
 
@@ -311,9 +330,13 @@ public class SnakeModel {
             if (!snake.isAlive()) continue;
             for (int[] segment : snake.getBody()) {
                 if (x == segment[0] && y == segment[1]) {
-                    if (snake == currentSnake && snake.getBody().getFirst() != segment) {
+                    if (currentSnake.getType().equals("PLAYER")) {
                         return true;
-                    } else if (snake != currentSnake) {
+                    }
+                    if (currentSnake.getType().equals("ROBOT") && snake.getType().equals("PLAYER")) {
+                        return true;
+                    }
+                    if (currentSnake.getType().equals("ROBOT") && currentSnake == snake && snake.getBody().getFirst() != segment) {
                         return true;
                     }
                 }
